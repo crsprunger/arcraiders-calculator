@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc Raiders Recipe Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #64ffda;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 0 0 20px rgba(100, 255, 218, 0.5);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #aaa;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .panel h2 {
+            color: #64ffda;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(100, 255, 218, 0.3);
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 1em;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #64ffda;
+            box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+        }
+
+        .items-list {
+            max-height: 500px;
+            overflow-y: auto;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .item-entry {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .item-entry:hover {
+            background: rgba(100, 255, 218, 0.1);
+            border-color: rgba(100, 255, 218, 0.3);
+            transform: translateX(5px);
+        }
+
+        .item-entry img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            margin-right: 15px;
+            border-radius: 6px;
+        }
+
+        .item-name {
+            flex: 1;
+            font-weight: 500;
+        }
+
+        .item-rarity {
+            font-size: 0.85em;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+
+        .rarity-common { background: #888; }
+        .rarity-uncommon { background: #2ecc71; }
+        .rarity-rare { background: #3498db; }
+        .rarity-epic { background: #9b59b6; }
+        .rarity-legendary { background: #f39c12; }
+
+        .selected-items {
+            margin-bottom: 15px;
+        }
+
+        .selected-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 8px;
+            background: rgba(100, 255, 218, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(100, 255, 218, 0.3);
+        }
+
+        .selected-item img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        .selected-item-name {
+            flex: 1;
+            font-weight: 500;
+        }
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .quantity-btn {
+            width: 30px;
+            height: 30px;
+            background: rgba(100, 255, 218, 0.2);
+            border: 1px solid #64ffda;
+            border-radius: 4px;
+            color: #64ffda;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+
+        .quantity-btn:hover {
+            background: rgba(100, 255, 218, 0.3);
+            transform: scale(1.1);
+        }
+
+        .quantity-display {
+            min-width: 40px;
+            text-align: center;
+            font-weight: bold;
+            color: #64ffda;
+        }
+
+        .remove-btn {
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid #e74c3c;
+            color: #e74c3c;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: all 0.2s;
+        }
+
+        .remove-btn:hover {
+            background: rgba(231, 76, 60, 0.3);
+        }
+
+        .results {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .resource-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid rgba(100, 255, 218, 0.3);
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .resource-card:hover {
+            border-color: #64ffda;
+            box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .resource-card.expandable {
+            cursor: pointer;
+        }
+
+        .resource-card.expandable:hover {
+            border-color: #ffaa00;
+        }
+
+        .expand-indicator {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #64ffda;
+        }
+
+        .sub-resources {
+            margin-left: 40px;
+            margin-top: 10px;
+            padding-left: 20px;
+            border-left: 2px solid rgba(100, 255, 218, 0.3);
+        }
+
+        .resource-card.sub-item {
+            margin-bottom: 10px;
+        }
+
+        .resource-card img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .resource-image-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .resource-image-container img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .upgrade-overlay {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: rgba(0, 0, 0, 0.85);
+            color: #64ffda;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.75em;
+            font-weight: bold;
+            border: 1px solid #64ffda;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .resource-name {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #64ffda;
+        }
+
+        .resource-quantity {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+            font-style: italic;
+        }
+
+        .clear-btn {
+            width: 100%;
+            padding: 10px;
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid #e74c3c;
+            border-radius: 6px;
+            color: #e74c3c;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: all 0.2s;
+        }
+
+        .clear-btn:hover {
+            background: rgba(231, 76, 60, 0.3);
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(100, 255, 218, 0.3);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(100, 255, 218, 0.5);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #64ffda;
+        }
+
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛠️ Arc Raiders Recipe Calculator</h1>
+        <p class="subtitle">Select items to see the base resources needed to craft them</p>
+
+        <div class="main-content">
+            <!-- Item Selection Panel -->
+            <div class="panel">
+                <h2>Available Items</h2>
+                <input type="text" class="search-box" id="searchBox" placeholder="Search items...">
+                <div id="itemsList" class="items-list">
+                    <div class="loading">Loading items...</div>
+                </div>
+            </div>
+
+            <!-- Selected Items Panel -->
+            <div class="panel">
+                <h2>Selected Items</h2>
+                <button class="clear-btn" id="clearBtn" style="display: none;">Clear All</button>
+                <div id="selectedItems" class="selected-items">
+                    <div class="empty-state">No items selected. Click on items from the left to add them.</div>
+            </div>
+        </div>
+
+        <!-- Results Panel -->
+        <div class="panel" id="resultsPanel" style="display: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <h2 style="margin: 0;">Required Resources</h2>
+                <button class="clear-btn" id="undoBtn" style="display: none; width: auto; margin: 0; padding: 8px 16px;">↶ Undo</button>
+            </div>
+            <div id="results" class="results"></div>
+        </div>
+    </div>
+
+    <script>
+        let allItems = [];
+        let selectedItems = {};
+
+        // Load all items on page load
+        async function loadItems() {
+            try {
+                const response = await fetch('/api/items');
+                allItems = await response.json();
+                displayItems(allItems);
+            } catch (error) {
+                console.error('Error loading items:', error);
+                document.getElementById('itemsList').innerHTML = '<div class="empty-state">Error loading items</div>';
+            }
+        }
+    
+        async function autoCalc() {
+            try {
+                const response = await fetch('/api/calculate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ items: selectedItems })
+                });
+
+                const resources = await response.json();
+                displayResults(resources, true); // Clear history on fresh calculation
+            } catch (error) {
+                console.error('Error calculating resources:', error);
+            }
+        }
+
+        // Display items in the list
+        function displayItems(items) {
+            const itemsList = document.getElementById('itemsList');
+            if (items.length === 0) {
+                itemsList.innerHTML = '<div class="empty-state">No items found</div>';
+                return;
+            }
+
+            itemsList.innerHTML = items.map(item => `
+                <div class="item-entry" onclick="addItem('${item.id}')">
+                    <img src="${item.image}" alt="${item.name}" onerror="this.src='/static/images/notfound.png'">
+                    <span class="item-name">${item.name}</span>
+                    <span class="item-rarity rarity-${item.rarity.toLowerCase()}">${item.rarity}</span>
+                </div>
+            `).join('');
+        }
+
+        // Search items
+        document.getElementById('searchBox').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = allItems.filter(item =>
+                item.name.toLowerCase().includes(searchTerm) ||
+                item.type.toLowerCase().includes(searchTerm)
+            );
+            displayItems(filtered);
+        });
+
+        // Add item to selection
+        function addItem(itemId) {
+            if (selectedItems[itemId]) {
+                selectedItems[itemId]++;
+            } else {
+                selectedItems[itemId] = 1;
+            }
+            updateSelectedItems();
+        }
+
+        // Update quantity
+        function updateQuantity(itemId, change) {
+            selectedItems[itemId] = Math.max(1, selectedItems[itemId] + change);
+            updateSelectedItems();
+        }
+
+        // Remove item
+        function removeItem(itemId) {
+            delete selectedItems[itemId];
+            updateSelectedItems();
+        }
+
+        // Clear all selected items
+        document.getElementById('clearBtn').addEventListener('click', () => {
+            selectedItems = {};
+            updateSelectedItems();
+        });
+
+        // Update selected items display
+        function updateSelectedItems() {
+            const container = document.getElementById('selectedItems');
+            const clearBtn = document.getElementById('clearBtn');
+
+            if (Object.keys(selectedItems).length === 0) {
+                container.innerHTML = '<div class="empty-state">No items selected. Click on items from the left to add them.</div>';
+                clearBtn.style.display = 'none';
+                document.getElementById('resultsPanel').style.display = 'none';
+                return;
+            }
+
+            clearBtn.style.display = 'block';
+
+            const html = Object.entries(selectedItems).map(([itemId, quantity]) => {
+                const item = allItems.find(i => i.id === itemId);
+                if (!item) return '';
+
+                return `
+                    <div class="selected-item">
+                        <img src="${item.image}" alt="${item.name}" onerror="this.src='/static/images/notfound.png'">
+                        <span class="selected-item-name">${item.name}</span>
+                        <div class="quantity-control">
+                            <button class="quantity-btn" onclick="updateQuantity('${itemId}', -1)">-</button>
+                            <span class="quantity-display">${quantity}</span>
+                            <button class="quantity-btn" onclick="updateQuantity('${itemId}', 1)">+</button>
+                        </div>
+                        <button class="remove-btn" onclick="removeItem('${itemId}')">Remove</button>
+                    </div>
+                `;
+            }).join('');
+
+            container.innerHTML = html;
+
+            autoCalc();
+        }
+
+        // Track current resource list as a map of item_id -> quantity
+        let currentResources = {};
+        // Track history for undo functionality
+        let resourceHistory = [];
+
+        // Update undo button visibility
+        function updateUndoButton() {
+            const undoBtn = document.getElementById('undoBtn');
+            if (resourceHistory.length > 0) {
+                undoBtn.style.display = 'block';
+            } else {
+                undoBtn.style.display = 'none';
+            }
+        }
+
+        // Display results
+        function displayResults(resources, clearHistory = false) {
+            const resultsPanel = document.getElementById('resultsPanel');
+            const resultsContainer = document.getElementById('results');
+
+            if (resources.length === 0) {
+                resultsPanel.style.display = 'none';
+                return;
+            }
+
+            resultsPanel.style.display = 'block';
+
+            // Convert array to map for current state
+            currentResources = {};
+            resources.forEach(r => {
+                currentResources[r.id] = r;
+            });
+
+            // Clear history when starting fresh calculation
+            if (clearHistory) {
+                resourceHistory = [];
+                updateUndoButton();
+            }
+
+            const html = resources.map(resource => {
+                const expandClass = resource.can_expand ? 'expandable' : '';
+                const expandIndicator = resource.can_expand ? '<div class="expand-indicator">▼</div>' : '';
+
+                return `
+                    <div class="resource-card ${expandClass}"
+                         data-item-id="${resource.id}"
+                         onclick="${resource.can_expand ? `expandItem('${resource.id}')` : ''}">
+                        ${expandIndicator}
+                        <img src="${resource.image}" alt="${resource.name}" onerror="this.style.opacity='0.3'; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22><circle cx=%2240%22 cy=%2240%22 r=%2230%22 fill=%22none%22 stroke=%22%23888%22 stroke-width=%222%22/><text x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23888%22 font-size=%2224%22>?</text></svg>'">
+                        <div class="resource-name">${resource.name}</div>
+                        <div class="resource-quantity">×${resource.quantity}</div>
+                    </div>
+                `;
+            }).join('');
+
+            resultsContainer.innerHTML = html;
+
+            // Scroll to results
+            // resultsPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Expand an item by replacing it with its recipe ingredients
+        async function expandItem(itemId) {
+            const resource = currentResources[itemId];
+            if (!resource || !resource.can_expand) return;
+
+            try {
+                // Save current state to history before making changes
+                const stateCopy = {};
+                for (const [id, res] of Object.entries(currentResources)) {
+                    stateCopy[id] = JSON.parse(JSON.stringify(res)); // Deep copy
+                }
+                resourceHistory.push(stateCopy);
+                updateUndoButton();
+
+                // Fetch the recipe for this item
+                const response = await fetch('/api/expand', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ item_id: itemId, quantity: resource.quantity })
+                });
+
+                const ingredients = await response.json();
+
+                // Remove the clicked item from current resources
+                delete currentResources[itemId];
+
+                // Add ingredients, accumulating quantities for duplicates
+                for (const ingredient of ingredients) {
+                    if (currentResources[ingredient.id]) {
+                        // Item already exists, add to its quantity
+                        currentResources[ingredient.id].quantity += ingredient.quantity;
+                    } else {
+                        // New item, add it
+                        currentResources[ingredient.id] = ingredient;
+                    }
+                }
+
+                // Convert map back to sorted array and redisplay
+                const resourcesArray = Object.values(currentResources).sort((a, b) =>
+                    a.name.localeCompare(b.name)
+                );
+
+                displayResults(resourcesArray);
+
+            } catch (error) {
+                console.error('Error expanding item:', error);
+            }
+        }
+
+        // Undo the last expansion
+        function undoExpansion() {
+            if (resourceHistory.length === 0) return;
+
+            // Restore the previous state
+            currentResources = resourceHistory.pop();
+            updateUndoButton();
+
+            // Convert map back to sorted array and redisplay
+            const resourcesArray = Object.values(currentResources).sort((a, b) =>
+                a.name.localeCompare(b.name)
+            );
+
+            displayResults(resourcesArray);
+        }
+
+        // Attach undo button event handler
+        document.getElementById('undoBtn').addEventListener('click', undoExpansion);
+
+        // Initialize
+        loadItems();
+    </script>
+</body>
+</html>
