@@ -43,9 +43,10 @@
   "type": "Key",
   "_note": "not_in_serverslam",
   "updatedAt": "11/08/2025",
-  "imageFilename": "https://cdn.arctracker.io/items/spaceport_control_tower_key.png",
   "value": 100,
   "rarity": "Rare",
   "weightKg": 0.25,
-  "stackSize": 1
+  "stackSize": 1,
+  "imageFilename": "spaceport_control_tower_key.png",
+  "verified": false
 }

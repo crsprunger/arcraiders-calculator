@@ -88,6 +88,7 @@
       "value": "7.5m"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/smoke_grenade_trap.png",
-  "updatedAt": "11/01/2025"
+  "updatedAt": "11/01/2025",
+  "imageFilename": "smoke_grenade_trap.png",
+  "verified": false
 }

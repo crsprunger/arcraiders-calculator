@@ -41,7 +41,6 @@
     "sr": "Medicinski predmet koji postepeno obnavlja veliku količinu zdravlja tokom vremena."
   },
   "type": "Quick Use",
-  "imageFilename": "https://cdn.arctracker.io/items/sterilized_bandage.png",
   "value": 2000,
   "rarity": "Rare",
   "weightKg": 0.2,
@@ -112,9 +111,11 @@
   },
   "updatedAt": "11/03/2025",
   "stackSize": 3,
+  "craftBench": "med_station",
+  "imageFilename": "sterilized_bandage.png",
   "recipe": {
     "antiseptic": 1,
     "durable_cloth": 2
   },
-  "craftBench": "med_station"
+  "verified": false
 }

@@ -40,7 +40,6 @@
     "hr": "Koristi se za izradu širokog spektra predmeta. Može se reciklirati u materijale za izradu. Koristi se za izradu: Produženi šaržer za sačmaru I, Produženi srednji šaržer I, Produženi laki šaržer I, Torrente, Produženi srednji šaržer II",
     "sr": "Koristi se za izradu širokog spektra predmeta. Može se reciklirati u materijale za izradu. Koristi se za izradu: Produženi šaržer za sačmaru I, Produženi srednji šaržer I, Produženi laki šaržer I, Torrente, Produženi srednji šaržer II"
   },
-  "imageFilename": "https://cdn.arctracker.io/items/steel_spring.png",
   "type": "Topside Material",
   "rarity": "Uncommon",
   "value": 300,
@@ -53,5 +52,7 @@
   "weightKg": 0.25,
   "stackSize": 15,
   "foundIn": "Industrial",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "steel_spring.png",
+  "verified": false
 }

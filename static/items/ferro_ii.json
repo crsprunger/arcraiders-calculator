@@ -151,6 +151,7 @@
       "value": "Strong"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/ferro.png",
-  "updatedAt": "10/31/2025"
+  "updatedAt": "10/31/2025",
+  "imageFilename": "ferro.png",
+  "verified": false
 }

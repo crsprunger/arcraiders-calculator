@@ -44,6 +44,7 @@
   "value": 5000,
   "weightKg": 0.0,
   "rarity": "Legendary",
-  "imageFilename": "https://cdn.arctracker.io/items/compensator_ii_blueprint.png",
-  "updatedAt": "11/01/2025"
+  "updatedAt": "11/01/2025",
+  "imageFilename": "compensator_ii_blueprint.png",
+  "verified": false
 }

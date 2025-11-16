@@ -55,6 +55,7 @@
   "sources": [
     "Matriarch"
   ],
-  "imageFilename": "https://cdn.arctracker.io/items/matriarch_reactor.png",
-  "updatedAt": "11/13/2025"
+  "updatedAt": "11/13/2025",
+  "imageFilename": "matriarch_reactor.png",
+  "verified": false
 }

@@ -7,5 +7,6 @@
   "weightKg": 1.0,
   "stackSize": 3,
   "foundIn": "ARC",
-  "imageFilename": "https://cdn.arctracker.io/items/damaged_fireball_burner.png"
+  "imageFilename": "damaged_fireball_burner.png",
+  "verified": false
 }

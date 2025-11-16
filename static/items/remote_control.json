@@ -53,6 +53,7 @@
   "weightKg": 0.8,
   "stackSize": 3,
   "foundIn": "Residential",
-  "imageFilename": "https://cdn.arctracker.io/items/remote_control.png",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "remote_control.png",
+  "verified": false
 }

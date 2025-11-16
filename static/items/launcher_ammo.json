@@ -45,11 +45,12 @@
   "rarity": "Rare",
   "weightKg": 0.1,
   "stackSize": 24,
-  "imageFilename": "https://cdn.arctracker.io/items/launcher_ammo.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "workbench",
+  "imageFilename": "launcher_ammo.png",
   "recipe": {
     "metal_parts": 4,
     "explosive_compound": 1
   },
-  "craftBench": "workbench"
+  "verified": false
 }

@@ -110,14 +110,15 @@
       "value": "2s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/shield_recharger.png",
   "updatedAt": "11/03/2025",
+  "craftBench": [
+    "workbench",
+    "med_station"
+  ],
+  "imageFilename": "shield_recharger.png",
   "recipe": {
     "rubber_parts": 5,
     "arc_powercell": 1
   },
-  "craftBench": [
-    "workbench",
-    "med_station"
-  ]
+  "verified": false
 }

@@ -87,15 +87,16 @@
       "value": "100m"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/wolfpack.png",
   "updatedAt": "10/30/2025",
   "recyclesInto": {
     "crude_explosives": 2,
     "synthesized_fuel": 2
   },
+  "craftBench": "explosives_bench",
+  "imageFilename": "wolfpack.png",
   "recipe": {
     "explosive_compound": 3,
     "arc_motion_core": 2
   },
-  "craftBench": "explosives_bench"
+  "verified": false
 }

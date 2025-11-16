@@ -46,6 +46,7 @@
   "weightKg": 0.8,
   "stackSize": 3,
   "foundIn": "Exodus",
-  "imageFilename": "https://cdn.arctracker.io/items/ruined_parachute.png",
-  "updatedAt": "11/04/2025"
+  "updatedAt": "11/04/2025",
+  "imageFilename": "ruined_parachute.png",
+  "verified": false
 }

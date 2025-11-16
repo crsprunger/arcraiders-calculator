@@ -92,6 +92,7 @@
       "value": "40s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/red_light_stick.png",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "red_light_stick.png",
+  "verified": false
 }

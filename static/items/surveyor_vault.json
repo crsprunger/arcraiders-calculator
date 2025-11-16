@@ -53,6 +53,7 @@
   "foundIn": "ARC",
   "weightKg": 0.75,
   "stackSize": 3,
-  "imageFilename": "https://cdn.arctracker.io/items/surveyor_vault.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "surveyor_vault.png",
+  "verified": false
 }

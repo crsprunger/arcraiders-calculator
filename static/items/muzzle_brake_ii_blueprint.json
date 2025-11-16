@@ -88,6 +88,7 @@
   "value": 5000,
   "weightKg": 0.0,
   "rarity": "Legendary",
-  "imageFilename": "https://cdn.arctracker.io/items/muzzle_brake_ii.png",
-  "updatedAt": "11/12/2025"
+  "updatedAt": "11/12/2025",
+  "imageFilename": "muzzle_brake_ii.png",
+  "verified": false
 }

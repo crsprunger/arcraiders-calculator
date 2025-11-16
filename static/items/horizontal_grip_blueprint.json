@@ -24,6 +24,7 @@
   "rarity": "Legendary",
   "value": 5000,
   "weightKg": 0,
-  "imageFilename": "https://cdn.arctracker.io/items/horizontal_grip.png",
-  "updatedAt": "11/12/2025"
+  "updatedAt": "11/12/2025",
+  "imageFilename": "horizontal_grip.png",
+  "verified": false
 }

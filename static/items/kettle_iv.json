@@ -151,6 +151,7 @@
       "value": "Very Weak"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/kettle.png",
-  "updatedAt": "10/31/2025"
+  "updatedAt": "10/31/2025",
+  "imageFilename": "kettle.png",
+  "verified": false
 }

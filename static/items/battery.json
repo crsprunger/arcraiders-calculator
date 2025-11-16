@@ -42,7 +42,6 @@
   },
   "type": "Topside Material",
   "rarity": "Uncommon",
-  "imageFilename": "https://cdn.arctracker.io/items/battery.png",
   "value": 250,
   "recyclesInto": {
     "metal_parts": 2
@@ -53,5 +52,7 @@
   "foundIn": "Technological, Electrical",
   "stackSize": 15,
   "weightKg": 0.25,
-  "updatedAt": "11/11/2025"
+  "updatedAt": "11/11/2025",
+  "imageFilename": "battery.png",
+  "verified": false
 }

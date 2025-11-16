@@ -11,5 +11,6 @@
   },
   "weightKg": 4.0,
   "value": 5000,
-  "imageFilename": "https://cdn.arctracker.io/items/tactical_mk_3_healing.png"
+  "imageFilename": "tactical_mk_3_healing.png",
+  "verified": false
 }

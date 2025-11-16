@@ -49,10 +49,11 @@
   "weightKg": 0.3,
   "stackSize": 5,
   "foundIn": "ARC",
-  "imageFilename": "https://cdn.arctracker.io/items/arc_motion_core.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "refiner",
+  "imageFilename": "arc_motion_core.png",
   "recipe": {
     "arc_alloy": 8
   },
-  "craftBench": "refiner"
+  "verified": false
 }

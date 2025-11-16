@@ -61,6 +61,54 @@
             font-size: 1.5em;
         }
 
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .panel-header h2 {
+            margin: 0;
+        }
+
+        .clear-all-btn {
+            padding: 6px 12px;
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid #e74c3c;
+            border-radius: 6px;
+            color: #e74c3c;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: all 0.2s;
+        }
+
+        .clear-all-btn:hover {
+            background: rgba(231, 76, 60, 0.3);
+        }
+
+        .auto-break-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85em;
+            color: #e0e0e0;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .auto-break-checkbox:hover {
+            background: rgba(100, 255, 218, 0.1);
+        }
+
+        .auto-break-checkbox input[type="checkbox"] {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+        }
+
         .search-box {
             width: 100%;
             padding: 12px;
@@ -76,6 +124,99 @@
             outline: none;
             border-color: #64ffda;
             box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+        }
+
+        .filters-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .filter-dropdown {
+            position: relative;
+            flex: 1;
+        }
+
+        .filter-button {
+            width: 100%;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(100, 255, 218, 0.3);
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 0.9em;
+            cursor: pointer;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s;
+        }
+
+        .filter-button:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #64ffda;
+        }
+
+        .filter-button::after {
+            content: '▼';
+            font-size: 0.8em;
+            color: #64ffda;
+        }
+
+        .filter-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: 5px;
+            background: rgba(30, 30, 46, 0.98);
+            border: 1px solid rgba(100, 255, 218, 0.3);
+            border-radius: 8px;
+            padding: 10px;
+            display: none;
+            z-index: 1000;
+            max-height: 300px;
+            overflow-y: auto;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        .filter-menu.active {
+            display: block;
+        }
+
+        .filter-option {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .filter-option:hover {
+            background: rgba(100, 255, 218, 0.1);
+        }
+
+        .filter-option input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+        }
+
+        .filter-option label {
+            cursor: pointer;
+            flex: 1;
+            color: #e0e0e0;
+        }
+
+        .filter-count {
+            color: #64ffda;
+            font-size: 0.85em;
+            background: rgba(100, 255, 218, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
         }
 
         .items-list {
@@ -105,31 +246,47 @@
             transform: translateX(5px);
         }
 
+        .item-entry.selected {
+            background: rgba(100, 255, 218, 0.15);
+            border-color: rgba(100, 255, 218, 0.5);
+        }
+
+        .item-quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-left: auto;
+        }
+
         .item-entry img {
             width: 50px;
             height: 50px;
             object-fit: contain;
             margin-right: 15px;
             border-radius: 6px;
+            padding: 3px;
+        }
+
+        .item-entry img.rarity-common { 
+            background: linear-gradient(90deg, rgba(136, 136, 136, 0.3) 0%, rgba(136, 136, 136, 0) 100%);
+        }
+        .item-entry img.rarity-uncommon { 
+            background: linear-gradient(90deg, rgba(46, 204, 113, 0.3) 0%, rgba(46, 204, 113, 0) 100%);
+        }
+        .item-entry img.rarity-rare { 
+            background: linear-gradient(90deg, rgba(52, 152, 219, 0.3) 0%, rgba(52, 152, 219, 0) 100%);
+        }
+        .item-entry img.rarity-epic { 
+            background: linear-gradient(90deg, rgba(206, 68, 162, 0.3) 0%, rgba(206, 68, 162, 0) 100%);
+        }
+        .item-entry img.rarity-legendary { 
+            background: linear-gradient(90deg, rgba(243, 156, 18, 0.3) 0%, rgba(243, 156, 18, 0) 100%);
         }
 
         .item-name {
             flex: 1;
             font-weight: 500;
         }
-
-        .item-rarity {
-            font-size: 0.85em;
-            padding: 3px 8px;
-            border-radius: 4px;
-            margin-left: 10px;
-        }
-
-        .rarity-common { background: #888; }
-        .rarity-uncommon { background: #2ecc71; }
-        .rarity-rare { background: #3498db; }
-        .rarity-epic { background: #9b59b6; }
-        .rarity-legendary { background: #f39c12; }
 
         .selected-items {
             margin-bottom: 15px;
@@ -366,46 +523,229 @@
         <div class="main-content">
             <!-- Item Selection Panel -->
             <div class="panel">
-                <h2>Available Items</h2>
+                <div class="panel-header">
+                    <h2>Available Items</h2>
+                    <button class="clear-all-btn" id="clearBtn" style="display: none;">Clear All</button>
+                </div>
                 <input type="text" class="search-box" id="searchBox" placeholder="Search items...">
+                
+                <!-- Filter Dropdowns -->
+                <div class="filters-container">
+                    <div class="filter-dropdown">
+                        <button class="filter-button" id="typeFilterBtn">
+                            <span id="typeFilterLabel">Type: All</span>
+                        </button>
+                        <div class="filter-menu" id="typeFilterMenu"></div>
+                    </div>
+                    <div class="filter-dropdown">
+                        <button class="filter-button" id="rarityFilterBtn">
+                            <span id="rarityFilterLabel">Rarity: All</span>
+                        </button>
+                        <div class="filter-menu" id="rarityFilterMenu"></div>
+                    </div>
+                </div>
+                
                 <div id="itemsList" class="items-list">
                     <div class="loading">Loading items...</div>
                 </div>
             </div>
 
-            <!-- Selected Items Panel -->
-            <div class="panel">
-                <h2>Selected Items</h2>
-                <button class="clear-btn" id="clearBtn" style="display: none;">Clear All</button>
-                <div id="selectedItems" class="selected-items">
-                    <div class="empty-state">No items selected. Click on items from the left to add them.</div>
+            <!-- Required Resources Panel -->
+            <div class="panel" id="resultsPanel" style="display: none;">
+                <div class="panel-header">
+                    <h2>Required Resources</h2>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <label class="auto-break-checkbox">
+                            <input type="checkbox" id="autoBreakCheckbox" onchange="toggleAutoBreak()">
+                            <span>Automatically break down all</span>
+                        </label>
+                        <button class="clear-all-btn" id="undoBtn" style="display: none;">↶ Undo</button>
+                    </div>
+                </div>
+                <div id="results" class="results"></div>
             </div>
-        </div>
-
-        <!-- Results Panel -->
-        <div class="panel" id="resultsPanel" style="display: none;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                <h2 style="margin: 0;">Required Resources</h2>
-                <button class="clear-btn" id="undoBtn" style="display: none; width: auto; margin: 0; padding: 8px 16px;">↶ Undo</button>
-            </div>
-            <div id="results" class="results"></div>
-        </div>
     </div>
 
     <script>
         let allItems = [];
         let selectedItems = {};
+        let selectedTypes = new Set();
+        let selectedRarities = new Set();
 
         // Load all items on page load
         async function loadItems() {
             try {
                 const response = await fetch('/api/items');
                 allItems = await response.json();
-                displayItems(allItems);
+                initializeFilters();
+                applyFilters();
             } catch (error) {
                 console.error('Error loading items:', error);
                 document.getElementById('itemsList').innerHTML = '<div class="empty-state">Error loading items</div>';
             }
+        }
+
+        // Initialize filter dropdowns with unique values
+        function initializeFilters() {
+            // Define weapon types to group together
+            const weaponTypes = ['Weapon', 'Shotgun', 'Special', 'Sniper Rifle', 'Launcher', 'LMG', 'Battle Rifle', 'Assault Rifle', 'Hand Cannon', 'Pistol'];
+            
+            // Get unique types and group weapons
+            const allTypes = [...new Set(allItems.map(item => item.type))];
+            const types = [];
+            let hasWeapons = false;
+            
+            for (const type of allTypes) {
+                if (weaponTypes.includes(type)) {
+                    hasWeapons = true;
+                } else {
+                    types.push(type);
+                }
+            }
+            
+            // Add "Weapon" as a single category if any weapon types exist
+            if (hasWeapons) {
+                types.unshift('Weapon');
+            }
+            
+            types.sort();
+            
+            // Define rarity order
+            const rarityOrder = ['Common', 'Uncommon', 'Rare', 'Epic', 'Legendary'];
+            const uniqueRarities = [...new Set(allItems.map(item => item.rarity))];
+            // Sort by predefined rarity order
+            const rarities = uniqueRarities.sort((a, b) => {
+                return rarityOrder.indexOf(a) - rarityOrder.indexOf(b);
+            });
+
+            // Populate type filter
+            const typeMenu = document.getElementById('typeFilterMenu');
+            typeMenu.innerHTML = types.map(type => {
+                let count;
+                if (type === 'Weapon') {
+                    // Count all weapon types
+                    count = allItems.filter(item => weaponTypes.includes(item.type)).length;
+                } else {
+                    count = allItems.filter(item => item.type === type).length;
+                }
+                return `
+                    <div class="filter-option" onclick="toggleFilter('type', '${type}')">
+                        <input type="checkbox" id="type_${type}" onchange="toggleFilter('type', '${type}')">
+                        <label for="type_${type}">${type}</label>
+                        <span class="filter-count">${count}</span>
+                    </div>
+                `;
+            }).join('');
+
+            // Populate rarity filter
+            const rarityMenu = document.getElementById('rarityFilterMenu');
+            rarityMenu.innerHTML = rarities.map(rarity => {
+                const count = allItems.filter(item => item.rarity === rarity).length;
+                return `
+                    <div class="filter-option" onclick="toggleFilter('rarity', '${rarity}')">
+                        <input type="checkbox" id="rarity_${rarity}" onchange="toggleFilter('rarity', '${rarity}')">
+                        <label for="rarity_${rarity}">${rarity}</label>
+                        <span class="filter-count">${count}</span>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Toggle filter dropdown visibility
+        document.getElementById('typeFilterBtn').addEventListener('click', () => {
+            const menu = document.getElementById('typeFilterMenu');
+            const rarityMenu = document.getElementById('rarityFilterMenu');
+            menu.classList.toggle('active');
+            rarityMenu.classList.remove('active');
+        });
+
+        document.getElementById('rarityFilterBtn').addEventListener('click', () => {
+            const menu = document.getElementById('rarityFilterMenu');
+            const typeMenu = document.getElementById('typeFilterMenu');
+            menu.classList.toggle('active');
+            typeMenu.classList.remove('active');
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.filter-dropdown')) {
+                document.querySelectorAll('.filter-menu').forEach(menu => {
+                    menu.classList.remove('active');
+                });
+            }
+        });
+
+        // Toggle filter selection
+        function toggleFilter(filterType, value) {
+            const checkbox = document.getElementById(`${filterType}_${value}`);
+            
+            if (filterType === 'type') {
+                if (selectedTypes.has(value)) {
+                    selectedTypes.delete(value);
+                    checkbox.checked = false;
+                } else {
+                    selectedTypes.add(value);
+                    checkbox.checked = true;
+                }
+                updateFilterLabel('type', selectedTypes);
+            } else if (filterType === 'rarity') {
+                if (selectedRarities.has(value)) {
+                    selectedRarities.delete(value);
+                    checkbox.checked = false;
+                } else {
+                    selectedRarities.add(value);
+                    checkbox.checked = true;
+                }
+                updateFilterLabel('rarity', selectedRarities);
+            }
+
+            applyFilters();
+        }
+
+        // Update filter button label
+        function updateFilterLabel(filterType, selectedSet) {
+            const label = document.getElementById(`${filterType}FilterLabel`);
+            const capitalized = filterType.charAt(0).toUpperCase() + filterType.slice(1);
+            
+            if (selectedSet.size === 0) {
+                label.textContent = `${capitalized}: All`;
+            } else if (selectedSet.size === 1) {
+                label.textContent = `${capitalized}: ${[...selectedSet][0]}`;
+            } else {
+                label.textContent = `${capitalized}: ${selectedSet.size} selected`;
+            }
+        }
+
+        // Apply filters and update display
+        function applyFilters() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            const weaponTypes = ['Weapon', 'Shotgun', 'Special', 'Sniper Rifle', 'Launcher', 'LMG', 'Battle Rifle', 'Assault Rifle', 'Hand Cannon', 'Pistol'];
+            
+            const filtered = allItems.filter(item => {
+                // Search filter
+                const matchesSearch = item.name.toLowerCase().includes(searchTerm) ||
+                                     item.type.toLowerCase().includes(searchTerm);
+                
+                // Type filter (if no types selected, show all)
+                let matchesType = selectedTypes.size === 0;
+                if (!matchesType) {
+                    // Check if "Weapon" is selected and item is any weapon type
+                    if (selectedTypes.has('Weapon') && weaponTypes.includes(item.type)) {
+                        matchesType = true;
+                    }
+                    // Check if item's specific type is selected (for non-weapon types)
+                    if (selectedTypes.has(item.type) && !weaponTypes.includes(item.type)) {
+                        matchesType = true;
+                    }
+                }
+                
+                // Rarity filter (if no rarities selected, show all)
+                const matchesRarity = selectedRarities.size === 0 || selectedRarities.has(item.rarity);
+                
+                return matchesSearch && matchesType && matchesRarity;
+            });
+            
+            displayItems(filtered);
         }
     
         async function autoCalc() {
@@ -420,102 +760,104 @@
 
                 const resources = await response.json();
                 displayResults(resources, true); // Clear history on fresh calculation
+                
+                // If auto-break is enabled, break down all resources
+                const autoBreakCheckbox = document.getElementById('autoBreakCheckbox');
+                if (autoBreakCheckbox && autoBreakCheckbox.checked) {
+                    await autoBreakdownAll();
+                }
             } catch (error) {
                 console.error('Error calculating resources:', error);
             }
         }
 
-        // Display items in the list
+        // Display items in the list with inline quantity controls
         function displayItems(items) {
             const itemsList = document.getElementById('itemsList');
+            const clearBtn = document.getElementById('clearBtn');
+            
             if (items.length === 0) {
                 itemsList.innerHTML = '<div class="empty-state">No items found</div>';
                 return;
             }
 
-            itemsList.innerHTML = items.map(item => `
-                <div class="item-entry" onclick="addItem('${item.id}')">
-                    <img src="${item.image}" alt="${item.name}" onerror="this.src='/static/images/notfound.png'">
-                    <span class="item-name">${item.name}</span>
-                    <span class="item-rarity rarity-${item.rarity.toLowerCase()}">${item.rarity}</span>
-                </div>
-            `).join('');
+            // Show/hide Clear All button
+            clearBtn.style.display = Object.keys(selectedItems).length > 0 ? 'block' : 'none';
+
+            // Sort items: selected items first (alphabetically), then unselected items (alphabetically)
+            const selectedItemsList = items.filter(item => selectedItems[item.id]).sort((a, b) => a.name.localeCompare(b.name));
+            const unselectedItemsList = items.filter(item => !selectedItems[item.id]).sort((a, b) => a.name.localeCompare(b.name));
+            const sortedItems = [...selectedItemsList, ...unselectedItemsList];
+
+            itemsList.innerHTML = sortedItems.map(item => {
+                const isSelected = selectedItems[item.id];
+                const selectedClass = isSelected ? 'selected' : '';
+                
+                let quantityControls = '';
+                if (isSelected) {
+                    quantityControls = `
+                        <div class="item-quantity-controls" onclick="event.stopPropagation()">
+                            <button class="quantity-btn" onclick="updateQuantity('${item.id}', -1)">-</button>
+                            <span class="quantity-display">${selectedItems[item.id]}</span>
+                            <button class="quantity-btn" onclick="updateQuantity('${item.id}', 1)">+</button>
+                            <button class="remove-btn" onclick="removeItem('${item.id}')">×</button>
+                        </div>
+                    `;
+                }
+                
+                return `
+                    <div class="item-entry ${selectedClass}" onclick="addItem('${item.id}')">
+                        <img src="${item.image}" alt="${item.name}" class="rarity-${item.rarity.toLowerCase()}" onerror="this.src='/static/images/notfound.png'">
+                        <span class="item-name">${item.name}</span>
+                        ${quantityControls}
+                    </div>
+                `;
+            }).join('');
         }
 
-        // Search items
-        document.getElementById('searchBox').addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            const filtered = allItems.filter(item =>
-                item.name.toLowerCase().includes(searchTerm) ||
-                item.type.toLowerCase().includes(searchTerm)
-            );
-            displayItems(filtered);
+        // Search items - now works with filters
+        document.getElementById('searchBox').addEventListener('input', () => {
+            applyFilters();
         });
 
         // Add item to selection
         function addItem(itemId) {
             if (selectedItems[itemId]) {
-                selectedItems[itemId]++;
+                // Item already selected - do nothing
+                return;
             } else {
                 selectedItems[itemId] = 1;
             }
-            updateSelectedItems();
+            applyFilters(); // Refresh display to show quantity controls
+            autoCalc();
         }
 
         // Update quantity
         function updateQuantity(itemId, change) {
-            selectedItems[itemId] = Math.max(1, selectedItems[itemId] + change);
-            updateSelectedItems();
+            const newQuantity = selectedItems[itemId] + change;
+            if (newQuantity <= 0) {
+                // Remove item if quantity would go to 0 or below
+                delete selectedItems[itemId];
+            } else {
+                selectedItems[itemId] = newQuantity;
+            }
+            applyFilters(); // Refresh display
+            autoCalc();
         }
 
         // Remove item
         function removeItem(itemId) {
             delete selectedItems[itemId];
-            updateSelectedItems();
+            applyFilters(); // Refresh display
+            autoCalc();
         }
 
         // Clear all selected items
         document.getElementById('clearBtn').addEventListener('click', () => {
             selectedItems = {};
-            updateSelectedItems();
+            applyFilters(); // Refresh display
+            document.getElementById('resultsPanel').style.display = 'none';
         });
-
-        // Update selected items display
-        function updateSelectedItems() {
-            const container = document.getElementById('selectedItems');
-            const clearBtn = document.getElementById('clearBtn');
-
-            if (Object.keys(selectedItems).length === 0) {
-                container.innerHTML = '<div class="empty-state">No items selected. Click on items from the left to add them.</div>';
-                clearBtn.style.display = 'none';
-                document.getElementById('resultsPanel').style.display = 'none';
-                return;
-            }
-
-            clearBtn.style.display = 'block';
-
-            const html = Object.entries(selectedItems).map(([itemId, quantity]) => {
-                const item = allItems.find(i => i.id === itemId);
-                if (!item) return '';
-
-                return `
-                    <div class="selected-item">
-                        <img src="${item.image}" alt="${item.name}" onerror="this.src='/static/images/notfound.png'">
-                        <span class="selected-item-name">${item.name}</span>
-                        <div class="quantity-control">
-                            <button class="quantity-btn" onclick="updateQuantity('${itemId}', -1)">-</button>
-                            <span class="quantity-display">${quantity}</span>
-                            <button class="quantity-btn" onclick="updateQuantity('${itemId}', 1)">+</button>
-                        </div>
-                        <button class="remove-btn" onclick="removeItem('${itemId}')">Remove</button>
-                    </div>
-                `;
-            }).join('');
-
-            container.innerHTML = html;
-
-            autoCalc();
-        }
 
         // Track current resource list as a map of item_id -> quantity
         let currentResources = {};
@@ -643,6 +985,75 @@
             );
 
             displayResults(resourcesArray);
+        }
+
+        // Toggle auto-break functionality
+        async function toggleAutoBreak() {
+            const checkbox = document.getElementById('autoBreakCheckbox');
+            
+            if (checkbox.checked) {
+                // Auto-break is now enabled - break down all current resources
+                await autoBreakdownAll();
+            } else {
+                // Auto-break disabled - recalculate from selected items if there are any
+                if (Object.keys(selectedItems).length > 0) {
+                    await autoCalc();
+                }
+            }
+        }
+
+        // Automatically break down all resources to base components
+        async function autoBreakdownAll() {
+            const maxIterations = 100; // Safety limit
+            let iterations = 0;
+            
+            while (iterations < maxIterations) {
+                // Find all expandable items
+                const expandableItems = Object.values(currentResources).filter(r => r.can_expand);
+                
+                if (expandableItems.length === 0) {
+                    // No more expandable items - done!
+                    break;
+                }
+                
+                // Expand all expandable items in parallel
+                for (const resource of expandableItems) {
+                    try {
+                        const response = await fetch('/api/expand', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ item_id: resource.id, quantity: resource.quantity })
+                        });
+                        
+                        const ingredients = await response.json();
+                        
+                        // Remove the expanded item
+                        delete currentResources[resource.id];
+                        
+                        // Add ingredients, accumulating quantities
+                        for (const ingredient of ingredients) {
+                            if (currentResources[ingredient.id]) {
+                                currentResources[ingredient.id].quantity += ingredient.quantity;
+                            } else {
+                                currentResources[ingredient.id] = ingredient;
+                            }
+                        }
+                    } catch (error) {
+                        console.error('Error expanding item:', error);
+                    }
+                }
+                
+                iterations++;
+            }
+            
+            // Display the final result
+            const resourcesArray = Object.values(currentResources).sort((a, b) =>
+                a.name.localeCompare(b.name)
+            );
+            
+            displayResults(resourcesArray, true);
         }
 
         // Attach undo button event handler

@@ -91,6 +91,7 @@
       "value": "1s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/lemon.png",
-  "updatedAt": "11/01/2025"
+  "updatedAt": "11/01/2025",
+  "imageFilename": "lemon.png",
+  "verified": false
 }

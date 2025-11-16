@@ -48,12 +48,13 @@
     "advanced_electrical_components": 1,
     "arc_circuitry": 1
   },
-  "imageFilename": "https://cdn.arctracker.io/items/power_rod.png",
   "updatedAt": "11/03/2025",
   "foundIn": "Exodus",
+  "craftBench": "refiner",
+  "imageFilename": "power_rod.png",
   "recipe": {
     "advanced_electrical_components": 2,
     "arc_circuitry": 2
   },
-  "craftBench": "refiner"
+  "verified": false
 }

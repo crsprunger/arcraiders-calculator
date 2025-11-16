@@ -47,6 +47,7 @@
     "syringe": 2,
     "antiseptic": 1
   },
-  "imageFilename": "https://cdn.arctracker.io/items/rusted_shut_medical_kit.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "rusted_shut_medical_kit.png",
+  "verified": false
 }

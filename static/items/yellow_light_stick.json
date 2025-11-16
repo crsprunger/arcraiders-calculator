@@ -92,6 +92,7 @@
       "value": "40s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/yellow_light_stick.png",
-  "updatedAt": "11/01/2025"
+  "updatedAt": "11/01/2025",
+  "imageFilename": "yellow_light_stick.png",
+  "verified": false
 }

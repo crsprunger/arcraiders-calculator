@@ -11,5 +11,6 @@
     "Max Loadout Weight": 4,
     "Shield Compatibility": "Light, Medium"
   },
-  "imageFilename": "https://cdn.arctracker.io/items/tactical_mk_1.png"
+  "imageFilename": "tactical_mk_1.png",
+  "verified": false
 }

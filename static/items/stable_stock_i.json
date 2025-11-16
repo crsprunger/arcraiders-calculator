@@ -43,7 +43,6 @@
   "type": "Modification",
   "rarity": "Common",
   "value": 640,
-  "imageFilename": "https://cdn.arctracker.io/items/stable_stock_i.png",
   "compatibleWith": [
     "Rattler",
     "Ferro",
@@ -107,9 +106,11 @@
     }
   },
   "updatedAt": "11/03/2025",
+  "craftBench": "weapon_bench",
+  "imageFilename": "stable_stock_i.png",
   "recipe": {
     "rubber_parts": 7,
     "duct_tape": 1
   },
-  "craftBench": "weapon_bench"
+  "verified": false
 }

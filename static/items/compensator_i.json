@@ -43,7 +43,6 @@
   "type": "Modification",
   "rarity": "Common",
   "value": 640,
-  "imageFilename": "https://cdn.arctracker.io/items/compensator_i.png",
   "compatibleWith": [
     "Ferro",
     "Kettle",
@@ -115,9 +114,11 @@
     }
   },
   "updatedAt": "10/30/2025",
+  "craftBench": "weapon_bench",
+  "imageFilename": "compensator_i.png",
   "recipe": {
     "metal_parts": 6,
     "wires": 1
   },
-  "craftBench": "weapon_bench"
+  "verified": false
 }

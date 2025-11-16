@@ -45,6 +45,7 @@
   "rarity": "Legendary",
   "weightKg": 0.0,
   "stackSize": 1,
-  "imageFilename": "https://cdn.arctracker.io/items/yellow_light_stick.png",
-  "updatedAt": "11/13/2025"
+  "updatedAt": "11/13/2025",
+  "imageFilename": "yellow_light_stick.png",
+  "verified": false
 }

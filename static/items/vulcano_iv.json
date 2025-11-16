@@ -170,10 +170,6 @@
     }
   },
   "value": 22000,
-  "upgradeCost": {
-    "advanced_mechanical_components": 2,
-    "heavy_gun_parts": 3
-  },
   "craftBench": "weapon_bench",
   "stationLevelRequired": 1,
   "recyclesInto": {
@@ -209,6 +205,11 @@
   "agility": 70.3,
   "stealth": 15,
   "weight": 8.0,
-  "imageFilename": "https://cdn.arctracker.io/items/vulcano.png",
-  "updatedAt": "11/12/2025"
+  "updatedAt": "11/12/2025",
+  "imageFilename": "vulcano.png",
+  "upgradeCost": {
+    "advanced_mechanical_components": 2,
+    "heavy_gun_parts": 3
+  },
+  "verified": false
 }

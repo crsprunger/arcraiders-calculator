@@ -47,6 +47,7 @@
     "chemicals": 2,
     "crude_explosives": 2
   },
-  "imageFilename": "https://cdn.arctracker.io/items/laboratory_reagents.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "laboratory_reagents.png",
+  "verified": false
 }

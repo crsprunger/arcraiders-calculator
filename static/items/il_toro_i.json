@@ -155,12 +155,13 @@
     "mechanical_components": 2,
     "simple_gun_parts": 2
   },
-  "imageFilename": "https://cdn.arctracker.io/items/il_toro.png",
   "updatedAt": "11/12/2025",
+  "craftBench": "weapon_bench",
+  "stationLevelRequired": 1,
+  "imageFilename": "il_toro.png",
   "recipe": {
     "mechanical_components": 5,
     "simple_gun_parts": 6
   },
-  "craftBench": "weapon_bench",
-  "stationLevelRequired": 1
+  "verified": false
 }

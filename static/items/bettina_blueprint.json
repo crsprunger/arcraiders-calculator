@@ -50,6 +50,7 @@
     "heavy_gun_parts": 3,
     "canister": 3
   },
-  "imageFilename": "https://cdn.arctracker.io/items/bettina_blueprint.png",
-  "updatedAt": "11/05/2025"
+  "updatedAt": "11/05/2025",
+  "imageFilename": "bettina_blueprint.png",
+  "verified": false
 }

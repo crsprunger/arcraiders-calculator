@@ -45,16 +45,17 @@
   "weightKg": 1.0,
   "stackSize": 3,
   "foundIn": "Security",
-  "imageFilename": "https://cdn.arctracker.io/items/complex_gun_parts.png",
   "value": 2000,
   "recyclesInto": {
     "simple_gun_parts": 3
   },
   "updatedAt": "11/03/2025",
+  "craftBench": "refiner",
+  "imageFilename": "complex_gun_parts.png",
   "recipe": {
     "light_gun_parts": 2,
     "medium_gun_parts": 2,
     "heavy_gun_parts": 2
   },
-  "craftBench": "refiner"
+  "verified": false
 }

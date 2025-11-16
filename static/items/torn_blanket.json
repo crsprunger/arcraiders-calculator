@@ -49,6 +49,7 @@
   "weightKg": 2.0,
   "stackSize": 3,
   "foundIn": "Residential, Medical",
-  "imageFilename": "https://cdn.arctracker.io/items/torn_blanket.png",
-  "updatedAt": "11/01/2025"
+  "updatedAt": "11/01/2025",
+  "imageFilename": "torn_blanket.png",
+  "verified": false
 }

@@ -47,10 +47,6 @@
     "plastic_parts": 1,
     "moss": 1
   },
-  "recipe": {
-    "plastic_parts": 9,
-    "moss": 1
-  },
   "craftBench": "med_station",
   "weightKg": 0.75,
   "stackSize": 3,
@@ -98,6 +94,11 @@
       "value": "1.5s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/defibrillator.png",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "defibrillator.png",
+  "recipe": {
+    "plastic_parts": 9,
+    "moss": 1
+  },
+  "verified": false
 }

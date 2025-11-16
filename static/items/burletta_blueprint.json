@@ -43,5 +43,6 @@
   "type": "Blueprint",
   "updatedAt": "11/12/2025",
   "rarity": "Legendary",
-  "imageFilename": "https://cdn.arctracker.io/items/burletta.png"
+  "imageFilename": "burletta.png",
+  "verified": false
 }

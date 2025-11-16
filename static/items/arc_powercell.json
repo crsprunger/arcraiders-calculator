@@ -44,7 +44,6 @@
   "rarity": "Common",
   "value": 640,
   "recyclesInto": {},
-  "imageFilename": "https://cdn.arctracker.io/items/arc_powercell.png",
   "weightKg": 0.5,
   "stackSize": 5,
   "foundIn": "ARC",
@@ -113,5 +112,7 @@
       "value": "3s"
     }
   },
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "arc_powercell.png",
+  "verified": false
 }

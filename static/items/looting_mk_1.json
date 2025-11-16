@@ -10,5 +10,6 @@
     "Max Loadout Weight": "18",
     "Shield Compatibility": "Yes"
   },
-  "imageFilename": "https://cdn.arctracker.io/items/looting_mk_1.png"
+  "imageFilename": "looting_mk_1.png",
+  "verified": false
 }

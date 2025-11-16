@@ -68,5 +68,6 @@
   },
   "value": 2000,
   "weightKg": 0.25,
-  "imageFilename": "https://cdn.arctracker.io/items/silencer_i.png"
+  "imageFilename": "silencer_i.png",
+  "verified": false
 }

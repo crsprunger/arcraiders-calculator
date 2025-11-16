@@ -89,14 +89,15 @@
       "value": "7.5m"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/heavy_fuze_grenade.png",
   "updatedAt": "11/03/2025",
   "recyclesInto": {
     "oil": 3
   },
+  "craftBench": "explosives_bench",
+  "imageFilename": "heavy_fuze_grenade.png",
   "recipe": {
     "explosive_compound": 1,
     "canister": 2
   },
-  "craftBench": "explosives_bench"
+  "verified": false
 }

@@ -93,6 +93,7 @@
       "value": "7.5m"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/smoke_grenade.png",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "smoke_grenade.png",
+  "verified": false
 }

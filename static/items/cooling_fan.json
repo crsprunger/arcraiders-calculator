@@ -49,6 +49,7 @@
   },
   "weightKg": 1.0,
   "foundIn": "Technological",
-  "imageFilename": "https://cdn.arctracker.io/items/cooling_fan.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "cooling_fan.png",
+  "verified": false
 }

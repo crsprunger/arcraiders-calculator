@@ -53,6 +53,7 @@
   "salvagesInto": {
     "canister": 2
   },
-  "imageFilename": "https://cdn.arctracker.io/items/water_filter.png",
-  "updatedAt": "11/1/2025"
+  "updatedAt": "11/1/2025",
+  "imageFilename": "water_filter.png",
+  "verified": false
 }

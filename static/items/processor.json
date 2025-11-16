@@ -50,6 +50,7 @@
   "weightKg": 0.2,
   "stackSize": 5,
   "foundIn": "Technological",
-  "imageFilename": "https://cdn.arctracker.io/items/processor.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "processor.png",
+  "verified": false
 }

@@ -44,10 +44,6 @@
   "value": 5000,
   "rarity": "Rare",
   "weightKg": 0.75,
-  "recipe": {
-    "mod_components": 2,
-    "wires": 4
-  },
   "effects": {
     "Reduced Vertical Recoil": {
       "en": "Reduced Vertical Recoil",
@@ -113,6 +109,11 @@
       "value": "20%"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/muzzle_brake_iii.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "muzzle_brake_iii.png",
+  "recipe": {
+    "mod_components": 2,
+    "wires": 4
+  },
+  "verified": false
 }

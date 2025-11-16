@@ -136,11 +136,6 @@
   },
   "weight": 14.0,
   "value": 27500,
-  "recipe": {
-    "magnetic_accelerator": 3,
-    "complex_gun_parts": 3,
-    "queen_reactor": 1
-  },
   "craftBench": "weapon_bench",
   "stationLevelRequired": 3,
   "blueprintLocked": true,
@@ -155,6 +150,12 @@
     "magnetic_accelerator": 2,
     "complex_gun_parts": 1
   },
-  "imageFilename": "https://cdn.arctracker.io/items/equalizer.png",
-  "updatedAt": "11/12/2025"
+  "updatedAt": "11/12/2025",
+  "imageFilename": "equalizer.png",
+  "recipe": {
+    "magnetic_accelerator": 3,
+    "complex_gun_parts": 3,
+    "queen_reactor": 1
+  },
+  "verified": false
 }

@@ -11,5 +11,6 @@
     "Duration": "5s",
     "Radius": "2m"
   },
-  "imageFilename": "https://cdn.arctracker.io/items/li_l_smoke_grenade.png"
+  "imageFilename": "li_l_smoke_grenade.png",
+  "verified": false
 }

@@ -114,11 +114,12 @@
       "value": "1s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/adrenaline_shot.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "med_station",
+  "imageFilename": "adrenaline_shot.png",
   "recipe": {
     "chemicals": 3,
     "plastic_parts": 3
   },
-  "craftBench": "med_station"
+  "verified": false
 }

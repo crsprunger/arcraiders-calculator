@@ -53,14 +53,8 @@
   "reducedReloadTime": 13,
   "reducedDurabilityBurnRate": 23,
   "stationLevelRequired": 3,
-  "imageFilename": "https://cdn.arctracker.io/items/vulcano.png",
   "updatedAt": "11/12/2025",
   "value": 10000,
-  "recipe": {
-    "magnetic_accelerator": 1,
-    "heavy_gun_parts": 3,
-    "exodus_modules": 1
-  },
   "craftBench": "weapon_bench",
   "effects": {
     "Durability": {
@@ -168,5 +162,12 @@
       "da": "ARC rustningspenetration",
       "value": "Weak"
     }
-  }
+  },
+  "imageFilename": "vulcano.png",
+  "recipe": {
+    "magnetic_accelerator": 1,
+    "heavy_gun_parts": 3,
+    "exodus_modules": 1
+  },
+  "verified": false
 }

@@ -1,3 +1,6 @@
 *.DS_Store
 .vscode/
 .vscode/*
+.venv/
+.venv/*
+.add_verified_field.py

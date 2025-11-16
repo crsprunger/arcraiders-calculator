@@ -111,10 +111,11 @@
   "weightKg": 4.0,
   "stackSize": 1,
   "craftBench": "equipment_bench",
+  "updatedAt": "11/11/2025",
+  "imageFilename": "looting_mk3_survivor.png",
   "recipe": {
     "advanced_mechanical_components": 2,
     "processor": 2
   },
-  "imageFilename": "https://cdn.arctracker.io/items/looting_mk3_survivor.png",
-  "updatedAt": "11/11/2025"
+  "verified": false
 }

@@ -45,15 +45,16 @@
   "recyclesInto": {
     "chemicals": 10
   },
-  "imageFilename": "https://cdn.arctracker.io/items/antiseptic.png",
   "foundIn": "Medical",
   "weightKg": 1.0,
   "stackSize": 5,
   "value": 1000,
   "updatedAt": "11/03/2025",
+  "craftBench": "refiner",
+  "imageFilename": "antiseptic.png",
   "recipe": {
     "chemicals": 10,
     "great_mullein": 2
   },
-  "craftBench": "refiner"
+  "verified": false
 }

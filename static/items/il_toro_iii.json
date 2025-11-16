@@ -149,10 +149,6 @@
     }
   },
   "value": 10000,
-  "upgradeCost": {
-    "mechanical_components": 4,
-    "heavy_gun_parts": 1
-  },
   "craftBench": "weapon_bench",
   "stationLevelRequired": 1,
   "recyclesInto": {
@@ -188,6 +184,11 @@
   "agility": 61.1,
   "stealth": 18,
   "weight": 8.0,
-  "imageFilename": "https://cdn.arctracker.io/items/il_toro.png",
-  "updatedAt": "11/12/2025"
+  "updatedAt": "11/12/2025",
+  "imageFilename": "il_toro.png",
+  "upgradeCost": {
+    "mechanical_components": 4,
+    "heavy_gun_parts": 1
+  },
+  "verified": false
 }

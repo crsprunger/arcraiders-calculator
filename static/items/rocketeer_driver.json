@@ -51,5 +51,6 @@
   "weightKg": 1.0,
   "stackSize": 3,
   "foundIn": "ARC",
-  "imageFilename": "https://cdn.arctracker.io/items/rocketeer_driver.png"
+  "imageFilename": "rocketeer_driver.png",
+  "verified": false
 }

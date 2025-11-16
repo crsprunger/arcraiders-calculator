@@ -53,5 +53,6 @@
   "stackSize": 5,
   "foundIn": "ARC",
   "updatedAt": "11/10/2025",
-  "imageFilename": "https://cdn.arctracker.io/items/damaged_arc_powercell.png"
+  "imageFilename": "damaged_arc_powercell.png",
+  "verified": false
 }

@@ -44,12 +44,13 @@
   "value": 20,
   "weightKg": 0.085,
   "stackSize": 20,
-  "imageFilename": "https://cdn.arctracker.io/items/shotgun_ammo.png",
   "rarity": "Common",
   "updatedAt": "11/03/2025",
+  "craftBench": "workbench",
+  "imageFilename": "shotgun_ammo.png",
   "recipe": {
     "metal_parts": 3,
     "chemicals": 2
   },
-  "craftBench": "workbench"
+  "verified": false
 }

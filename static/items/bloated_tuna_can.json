@@ -89,7 +89,8 @@
   "foundIn": "Residential, Commercial",
   "stackSize": 15,
   "weightKg": 0.2,
-  "imageFilename": "https://cdn.arctracker.io/items/bloated_tuna_can.png",
   "rarity": "Common",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "bloated_tuna_can.png",
+  "verified": false
 }

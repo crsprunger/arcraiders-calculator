@@ -114,12 +114,13 @@
     }
   },
   "updatedAt": "11/03/2025",
-  "imageFilename": "https://cdn.arctracker.io/items/bandage.png",
-  "recipe": {
-    "fabric": 5
-  },
   "craftBench": [
     "workbench",
     "med_station"
-  ]
+  ],
+  "imageFilename": "bandage.png",
+  "recipe": {
+    "fabric": 5
+  },
+  "verified": false
 }

@@ -48,10 +48,6 @@
     "mechanical_components": 1,
     "duct_tape": 1
   },
-  "recipe": {
-    "mechanical_components": 2,
-    "duct_tape": 3
-  },
   "craftBench": "weapon_bench",
   "effects": {
     "Reduced Horizontal Recoil": {
@@ -83,6 +79,11 @@
     "Il Toro",
     "Stitcher"
   ],
-  "imageFilename": "https://cdn.arctracker.io/items/angled_grip_ii.png",
-  "updatedAt": "11/05/2025"
+  "updatedAt": "11/05/2025",
+  "imageFilename": "angled_grip_ii.png",
+  "recipe": {
+    "mechanical_components": 2,
+    "duct_tape": 3
+  },
+  "verified": false
 }

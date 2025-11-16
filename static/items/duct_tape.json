@@ -20,7 +20,6 @@
     "hr": "Ljepljiva Traka",
     "sr": "Lepljiva Traka"
   },
-  "imageFilename": "https://cdn.arctracker.io/items/duct_tape.png",
   "value": 300,
   "recyclesInto": {
     "fabric": 3
@@ -50,5 +49,7 @@
   "weightKg": 0.25,
   "stackSize": 15,
   "foundIn": "Residential, Commercial",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "duct_tape.png",
+  "verified": false
 }

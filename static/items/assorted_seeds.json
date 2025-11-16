@@ -40,7 +40,6 @@
     "hr": "Pregršt sjemenja. Celeste bi mogla tražiti ovo.",
     "sr": "Pregršt semenja. Celeste bi mogla tražiti ovo."
   },
-  "imageFilename": "https://cdn.arctracker.io/items/assorted_seeds.png",
   "rarity": "Common",
   "type": "Nature",
   "value": 100,
@@ -48,5 +47,7 @@
   "weightKg": 0.05,
   "stackSize": 100,
   "foundIn": "Nature",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "assorted_seeds.png",
+  "verified": false
 }

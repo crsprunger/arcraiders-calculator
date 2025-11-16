@@ -113,11 +113,12 @@
       "value": "Light, Medium"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/tactical_mk1.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "equipment_bench",
+  "imageFilename": "tactical_mk1.png",
   "recipe": {
     "plastic_parts": 6,
     "rubber_parts": 6
   },
-  "craftBench": "equipment_bench"
+  "verified": false
 }

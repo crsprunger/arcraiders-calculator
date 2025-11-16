@@ -155,11 +155,12 @@
     }
   },
   "updatedAt": "11/12/2025",
-  "imageFilename": "https://cdn.arctracker.io/items/rattler.png",
+  "craftBench": "weapon_bench",
+  "stationLevelRequired": 1,
+  "imageFilename": "rattler.png",
   "recipe": {
     "metal_parts": 16,
     "rubber_parts": 12
   },
-  "craftBench": "weapon_bench",
-  "stationLevelRequired": 1
+  "verified": false
 }

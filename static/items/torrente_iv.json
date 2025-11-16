@@ -171,15 +171,16 @@
       "value": "Moderate"
     }
   },
-  "upgradeCost": {
-    "advanced_mechanical_components": 2,
-    "medium_gun_parts": 2
-  },
   "recyclesInto": {
     "advanced_mechanical_components": 3,
     "medium_gun_parts": 3
   },
-  "imageFilename": "https://cdn.arctracker.io/items/torrente.png",
   "updatedAt": "11/06/2025",
-  "weightKg": 12.0
+  "weightKg": 12.0,
+  "imageFilename": "torrente.png",
+  "upgradeCost": {
+    "advanced_mechanical_components": 2,
+    "medium_gun_parts": 2
+  },
+  "verified": false
 }

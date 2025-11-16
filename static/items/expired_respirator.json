@@ -50,6 +50,7 @@
   "weightKg": 2.0,
   "stackSize": 3,
   "foundIn": "Medical",
-  "imageFilename": "https://cdn.arctracker.io/items/expired_respirator.png",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "expired_respirator.png",
+  "verified": false
 }

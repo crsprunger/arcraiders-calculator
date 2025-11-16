@@ -149,10 +149,6 @@
     }
   },
   "value": 13000,
-  "upgradeCost": {
-    "advanced_mechanical_components": 1,
-    "heavy_gun_parts": 2
-  },
   "craftBench": "weapon_bench",
   "stationLevelRequired": 2,
   "recyclesInto": {
@@ -191,6 +187,11 @@
   "agility": 67.9,
   "stealth": 1,
   "weight": 7.0,
-  "imageFilename": "https://cdn.arctracker.io/items/hullcracker.png",
-  "updatedAt": "11/12/2025"
+  "updatedAt": "11/12/2025",
+  "imageFilename": "hullcracker.png",
+  "upgradeCost": {
+    "advanced_mechanical_components": 1,
+    "heavy_gun_parts": 2
+  },
+  "verified": false
 }

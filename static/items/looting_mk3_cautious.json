@@ -109,11 +109,12 @@
       "value": "Light"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/looting_mk3_cautious.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "equipment_bench",
+  "imageFilename": "looting_mk3_cautious.png",
   "recipe": {
     "advanced_electrical_components": 2,
     "processor": 3
   },
-  "craftBench": "equipment_bench"
+  "verified": false
 }

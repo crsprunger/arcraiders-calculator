@@ -41,6 +41,7 @@
     "sr": "Nestabilna komponenta za izradu."
   },
   "type": "Material",
-  "imageFilename": "https://cdn.arctracker.io/items/explosive_mixture.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "explosive_mixture.png",
+  "verified": false
 }

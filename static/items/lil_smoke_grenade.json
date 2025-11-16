@@ -93,11 +93,12 @@
       "value": "2.5m"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/lil_smoke_grenade.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "utility_bench",
+  "imageFilename": "lil_smoke_grenade.png",
   "recipe": {
     "chemicals": 5,
     "plastic_parts": 1
   },
-  "craftBench": "utility_bench"
+  "verified": false
 }

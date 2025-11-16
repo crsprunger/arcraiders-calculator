@@ -92,11 +92,12 @@
       "value": "500 Health"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/barricade_kit.png",
   "updatedAt": "11/13/2025",
+  "craftBench": "utility_bench",
+  "stationLevelRequired": 1,
+  "imageFilename": "barricade_kit.png",
   "recipe": {
     "mechanical_components": 1
   },
-  "craftBench": "utility_bench",
-  "stationLevelRequired": 1
+  "verified": false
 }

@@ -43,7 +43,6 @@
   "type": "Modification",
   "rarity": "Common",
   "value": 640,
-  "imageFilename": "https://cdn.arctracker.io/items/extended_light_mag_i.png",
   "compatibleWith": [
     "Hairpin",
     "Kettle",
@@ -86,9 +85,11 @@
     }
   },
   "updatedAt": "11/03/2025",
+  "craftBench": "weapon_bench",
+  "imageFilename": "extended_light_mag_i.png",
   "recipe": {
     "plastic_parts": 6,
     "steel_spring": 1
   },
-  "craftBench": "weapon_bench"
+  "verified": false
 }

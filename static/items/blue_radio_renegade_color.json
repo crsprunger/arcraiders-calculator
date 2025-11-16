@@ -41,7 +41,8 @@
     "hr": "Nova kozmetička varijanta bit će dodana u vašu kolekciju."
   },
   "type": "Cosmetic",
-  "imageFilename": "https://cdn.arctracker.io/items/blue_radio_renegade_color.png",
   "rarity": "Common",
-  "updatedAt": "11/10/2025"
+  "updatedAt": "11/10/2025",
+  "imageFilename": "blue_radio_renegade_color.png",
+  "verified": false
 }

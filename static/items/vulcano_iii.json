@@ -235,12 +235,13 @@
       "value": "26%"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/vulcano.png",
   "updatedAt": "11/12/2025",
   "craftBench": "weapon_bench",
+  "stationLevelRequired": 1,
+  "imageFilename": "vulcano.png",
   "upgradeCost": {
     "advanced_mechanical_components": 2,
     "heavy_gun_parts": 1
   },
-  "stationLevelRequired": 1
+  "verified": false
 }

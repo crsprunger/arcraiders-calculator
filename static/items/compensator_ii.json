@@ -99,11 +99,12 @@
     "Burletta",
     "Stitcher"
   ],
-  "imageFilename": "https://cdn.arctracker.io/items/compensator_ii.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "weapon_bench",
+  "imageFilename": "compensator_ii.png",
   "recipe": {
     "mechanical_components": 2,
     "wires": 4
   },
-  "craftBench": "weapon_bench"
+  "verified": false
 }

@@ -93,11 +93,12 @@
       "value": "7.5m"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/snap_blast_grenade.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "explosives_bench",
+  "imageFilename": "snap_blast_grenade.png",
   "recipe": {
     "crude_explosives": 2,
     "magnet": 1
   },
-  "craftBench": "explosives_bench"
+  "verified": false
 }

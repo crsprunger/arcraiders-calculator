@@ -49,6 +49,7 @@
   },
   "weightKg": 2.0,
   "foundIn": "Industrial",
-  "imageFilename": "https://cdn.arctracker.io/items/cooling_coil.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "cooling_coil.png",
+  "verified": false
 }

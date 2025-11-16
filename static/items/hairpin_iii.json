@@ -214,7 +214,6 @@
   },
   "weightKg": 3.0,
   "value": 2000,
-  "imageFilename": "https://cdn.arctracker.io/items/hairpin_i.png",
   "updatedAt": "11/11/2025",
   "recyclesInto": {
     "metal_parts": 6,
@@ -224,8 +223,10 @@
     "simple_gun_parts": 1
   },
   "craftBench": "weapon_bench",
+  "imageFilename": "hairpin_i.png",
   "upgradeCost": {
     "metal_parts": 6,
     "simple_gun_parts": 1
-  }
+  },
+  "verified": false
 }

@@ -51,7 +51,6 @@
   "salvagesInto": {
     "electrical_components": 1
   },
-  "imageFilename": "https://cdn.arctracker.io/items/wasp_driver.png",
   "weightKg": 0.6,
   "stackSize": 3,
   "foundIn": "ARC",
@@ -99,5 +98,7 @@
       "value": "5m"
     }
   },
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "wasp_driver.png",
+  "verified": false
 }

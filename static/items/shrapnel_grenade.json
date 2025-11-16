@@ -94,10 +94,11 @@
   "weightKg": 0.15,
   "stackSize": 5,
   "updatedAt": "11/03/2025",
+  "craftBench": "explosives_bench",
+  "imageFilename": "shrapnel_grenade.png",
   "recipe": {
     "crude_explosives": 1,
     "steel_spring": 2
   },
-  "craftBench": "explosives_bench",
-  "imageFilename": "https://cdn.arctracker.io/items/shrapnel_grenade.png"
+  "verified": false
 }

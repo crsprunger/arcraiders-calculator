@@ -78,6 +78,11 @@
     "Il Toro",
     "Stitcher"
   ],
-  "imageFilename": "https://cdn.arctracker.io/items/vertical_grip_ii.png",
-  "updatedAt": "11/05/2025"
+  "updatedAt": "11/05/2025",
+  "imageFilename": "vertical_grip_ii.png",
+  "recipe": {
+    "mechanical_components": 2,
+    "duct_tape": 3
+  },
+  "verified": false
 }

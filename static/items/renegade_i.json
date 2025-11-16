@@ -151,13 +151,14 @@
   },
   "value": 7000,
   "weightKg": 10.0,
-  "imageFilename": "https://cdn.arctracker.io/items/renegade.png",
   "updatedAt": "11/12/2025",
+  "craftBench": "weapon_bench",
+  "stationLevelRequired": 3,
+  "imageFilename": "renegade.png",
   "recipe": {
     "advanced_mechanical_components": 2,
     "medium_gun_parts": 3,
     "oil": 5
   },
-  "craftBench": "weapon_bench",
-  "stationLevelRequired": 3
+  "verified": false
 }

@@ -43,6 +43,7 @@
   "type": "Recyclable",
   "rarity": "Uncommon",
   "recyclesInto": {},
-  "imageFilename": "https://cdn.arctracker.io/items/ruined_baton.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "ruined_baton.png",
+  "verified": false
 }

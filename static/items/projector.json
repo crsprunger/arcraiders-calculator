@@ -50,6 +50,7 @@
   "weightKg": 2,
   "stackSize": 3,
   "foundIn": "Residential",
-  "imageFilename": "https://cdn.arctracker.io/items/projector.png",
-  "updatedAt": "11/04/2025"
+  "updatedAt": "11/04/2025",
+  "imageFilename": "projector.png",
+  "verified": false
 }

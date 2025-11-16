@@ -44,6 +44,7 @@
   "value": 5000,
   "weightKg": 0.0,
   "rarity": "Legendary",
-  "imageFilename": "https://cdn.arctracker.io/items/silencer_i.png",
-  "updatedAt": "11/12/2025"
+  "updatedAt": "11/12/2025",
+  "imageFilename": "silencer_i.png",
+  "verified": false
 }

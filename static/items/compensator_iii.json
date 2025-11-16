@@ -129,11 +129,12 @@
     "Bobcat",
     "Tempest"
   ],
-  "imageFilename": "https://cdn.arctracker.io/items/compensator_iii.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "weapon_bench",
+  "imageFilename": "compensator_iii.png",
   "recipe": {
     "mechanical_components": 2,
     "wires": 8
   },
-  "craftBench": "weapon_bench"
+  "verified": false
 }

@@ -91,5 +91,6 @@
       "value": "1s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/mushroom.png"
+  "imageFilename": "mushroom.png",
+  "verified": false
 }

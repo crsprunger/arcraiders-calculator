@@ -52,6 +52,7 @@
   "weightKg": 1.0,
   "stackSize": 3,
   "foundIn": "ARC",
-  "imageFilename": "https://cdn.arctracker.io/items/arc_coolant.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "arc_coolant.png",
+  "verified": false
 }

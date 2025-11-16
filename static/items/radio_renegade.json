@@ -41,7 +41,8 @@
     "sr": "Novi kozmetički predmet biće dodat u vašu kolekciju."
   },
   "type": "Outfit",
-  "imageFilename": "https://cdn.arctracker.io/items/radio_renegade.png",
   "rarity": "Common",
-  "updatedAt": "11/01/2025"
+  "updatedAt": "11/01/2025",
+  "imageFilename": "radio_renegade.png",
+  "verified": false
 }

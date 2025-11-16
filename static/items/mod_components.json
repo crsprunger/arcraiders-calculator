@@ -46,15 +46,16 @@
   "weightKg": 1.0,
   "stackSize": 5,
   "foundIn": "Security",
-  "imageFilename": "https://cdn.arctracker.io/items/mod_components.png",
   "updatedAt": "11/03/2025",
   "recyclesInto": {
     "mechanical_components": 1,
     "steel_spring": 1
   },
+  "craftBench": "refiner",
+  "imageFilename": "mod_components.png",
   "recipe": {
     "steel_spring": 2,
     "mechanical_components": 2
   },
-  "craftBench": "refiner"
+  "verified": false
 }

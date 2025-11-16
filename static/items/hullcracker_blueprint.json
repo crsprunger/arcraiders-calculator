@@ -5,6 +5,7 @@
   "type": "Blueprint",
   "value": 5000,
   "weightKg": 0.0,
-  "imageFilename": "https://cdn.arctracker.io/items/hullcracker_blueprint.png",
-  "rarity": "Common"
+  "rarity": "Common",
+  "imageFilename": "hullcracker_blueprint.png",
+  "verified": false
 }

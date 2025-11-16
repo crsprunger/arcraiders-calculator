@@ -50,11 +50,12 @@
   "weightKg": 1.0,
   "stackSize": 3,
   "foundIn": "Exodus",
-  "imageFilename": "https://cdn.arctracker.io/items/magnetic_accelerator.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "refiner",
+  "imageFilename": "magnetic_accelerator.png",
   "recipe": {
     "advanced_mechanical_components": 2,
     "arc_motion_core": 2
   },
-  "craftBench": "refiner"
+  "verified": false
 }

@@ -46,10 +46,6 @@
     "advanced_electrical_components": 1,
     "processor": 1
   },
-  "recipe": {
-    "advanced_electrical_components": 2,
-    "processor": 3
-  },
   "craftBench": "equipment_bench",
   "effects": {
     "Durability": {
@@ -118,6 +114,11 @@
   },
   "weightKg": 4.0,
   "value": 5000,
-  "imageFilename": "https://cdn.arctracker.io/items/tactical_mk3_healing.png",
-  "updatedAt": "11/05/2025"
+  "updatedAt": "11/05/2025",
+  "imageFilename": "tactical_mk3_healing.png",
+  "recipe": {
+    "advanced_electrical_components": 2,
+    "processor": 3
+  },
+  "verified": false
 }

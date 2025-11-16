@@ -46,7 +46,6 @@
   "weightKg": 2.0,
   "stackSize": 3,
   "foundIn": "Mechanical",
-  "imageFilename": "https://cdn.arctracker.io/items/coolant.png",
   "updatedAt": "11/07/2025",
   "recyclesInto": {
     "chemicals": 5,
@@ -54,5 +53,7 @@
   },
   "salvagesInto": {
     "oil": 2
-  }
+  },
+  "imageFilename": "coolant.png",
+  "verified": false
 }

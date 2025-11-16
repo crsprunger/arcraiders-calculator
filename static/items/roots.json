@@ -41,7 +41,6 @@
     "hr": "Moglo bi vrijediti nekoliko novčića.",
     "sr": "Moglo bi vredeti nekoliko novčića."
   },
-  "imageFilename": "https://cdn.arctracker.io/items/roots.png",
   "type": "Nature",
   "value": 640,
   "recyclesInto": {
@@ -50,5 +49,7 @@
   "updatedAt": "10/31/2025",
   "weightKg": 0.2,
   "stackSize": 10,
-  "foundIn": "Nature"
+  "foundIn": "Nature",
+  "imageFilename": "roots.png",
+  "verified": false
 }

@@ -44,6 +44,7 @@
   "value": 5000,
   "weightKg": 0.0,
   "rarity": "Legendary",
-  "imageFilename": "https://cdn.arctracker.io/items/trigger_nade_blueprint.png",
-  "updatedAt": "11/12/2025"
+  "updatedAt": "11/12/2025",
+  "imageFilename": "trigger_nade_blueprint.png",
+  "verified": false
 }

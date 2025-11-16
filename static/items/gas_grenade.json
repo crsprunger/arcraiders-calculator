@@ -114,11 +114,12 @@
       "value": "7.5m"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/gas_grenade.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "explosives_bench",
+  "imageFilename": "gas_grenade.png",
   "recipe": {
     "chemicals": 4,
     "rubber_parts": 2
   },
-  "craftBench": "explosives_bench"
+  "verified": false
 }

@@ -89,9 +89,10 @@
       "value": "40s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/blue_light_stick.png",
   "updatedAt": "11/01/2025",
   "recyclesInto": {
     "chemicals": 1
-  }
+  },
+  "imageFilename": "blue_light_stick.png",
+  "verified": false
 }

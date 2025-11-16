@@ -47,10 +47,11 @@
   "salvagesInto": {
     "rubber_parts": 9
   },
-  "imageFilename": "https://cdn.arctracker.io/items/deflated_football.png",
   "rarity": "Uncommon",
   "weightKg": 0.8,
   "stackSize": 3,
   "foundIn": "Residential",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "deflated_football.png",
+  "verified": false
 }

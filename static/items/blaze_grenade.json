@@ -43,7 +43,6 @@
   "type": "Quick Use",
   "rarity": "Rare",
   "value": 1600,
-  "imageFilename": "https://cdn.arctracker.io/items/blaze_grenade.png",
   "recyclesInto": {
     "oil": 2,
     "metal_parts": 4
@@ -115,5 +114,7 @@
       "value": "10m"
     }
   },
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "blaze_grenade.png",
+  "verified": false
 }

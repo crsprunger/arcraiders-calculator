@@ -172,12 +172,7 @@
   },
   "weightKg": 3.0,
   "value": 450,
-  "imageFilename": "https://cdn.arctracker.io/items/hairpin_i.png",
   "updatedAt": "11/11/2025",
-  "recipe": {
-    "metal_parts": 2,
-    "plastic_parts": 5
-  },
   "recyclesInto": {
     "metal_parts": 2,
     "rubber_parts": 1
@@ -188,5 +183,11 @@
   "craftBench": [
     "workbench",
     "weapon_bench"
-  ]
+  ],
+  "imageFilename": "hairpin_i.png",
+  "recipe": {
+    "metal_parts": 2,
+    "plastic_parts": 5
+  },
+  "verified": false
 }

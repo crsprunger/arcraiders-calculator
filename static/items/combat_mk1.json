@@ -47,7 +47,6 @@
     "plastic_parts": 3,
     "rubber_parts": 3
   },
-  "imageFilename": "https://cdn.arctracker.io/items/combat_mk1.png",
   "updatedAt": "11/03/2025",
   "weightKg": 2.0,
   "effects": {
@@ -115,9 +114,11 @@
       "value": "Light, Medium"
     }
   },
+  "craftBench": "equipment_bench",
+  "imageFilename": "combat_mk1.png",
   "recipe": {
     "plastic_parts": 6,
     "rubber_parts": 6
   },
-  "craftBench": "equipment_bench"
+  "verified": false
 }

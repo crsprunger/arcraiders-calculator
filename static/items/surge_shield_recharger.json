@@ -89,14 +89,15 @@
       "value": "5s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/surge_shield_recharger.png",
   "updatedAt": "11/03/2025",
   "recyclesInto": {
     "electrical_components": 1
   },
+  "craftBench": "med_station",
+  "imageFilename": "surge_shield_recharger.png",
   "recipe": {
     "electrical_components": 1,
     "advanced_arc_powercell": 1
   },
-  "craftBench": "med_station"
+  "verified": false
 }

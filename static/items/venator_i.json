@@ -171,17 +171,18 @@
     }
   },
   "value": 7000,
-  "recipe": {
-    "advanced_mechanical_components": 2,
-    "medium_gun_parts": 3,
-    "magnet": 5
-  },
   "recyclesInto": {
     "advanced_mechanical_components": 1,
     "medium_gun_parts": 2
   },
   "craftBench": "weapon_bench",
   "stationLevelRequired": 2,
-  "imageFilename": "https://cdn.arctracker.io/items/venator.png",
-  "updatedAt": "11/11/2025"
+  "updatedAt": "11/11/2025",
+  "imageFilename": "venator.png",
+  "recipe": {
+    "advanced_mechanical_components": 2,
+    "medium_gun_parts": 3,
+    "magnet": 5
+  },
+  "verified": false
 }

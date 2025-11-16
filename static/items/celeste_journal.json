@@ -42,7 +42,8 @@
   },
   "type": "Trinket",
   "weightKg": 0.25,
-  "imageFilename": "https://cdn.arctracker.io/items/celestes_journal.png",
   "rarity": "Common",
-  "updatedAt": "11/09/2025"
+  "updatedAt": "11/09/2025",
+  "imageFilename": "celestes_journal.png",
+  "verified": false
 }

@@ -50,6 +50,7 @@
   "weightKg": 2.0,
   "stackSize": 3,
   "foundIn": "Residential, Commercial",
-  "imageFilename": "https://cdn.arctracker.io/items/headphones.png",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "headphones.png",
+  "verified": false
 }

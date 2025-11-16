@@ -42,5 +42,6 @@
   },
   "type": "Cosmetic",
   "updatedAt": "11/10/2025",
-  "imageFilename": "https://cdn.arctracker.io/items/cans.png"
+  "imageFilename": "cans.png",
+  "verified": false
 }

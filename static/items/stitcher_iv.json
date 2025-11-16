@@ -41,12 +41,13 @@
     "sr": "Potpuno automatski SMG. Zadaje dobru štetu, ali ima prilično nisku brzinu paljbe i može biti teško kontrolisati."
   },
   "type": "Weapon",
-  "rarity": "Uncommon",
+  "rarity": "Common",
   "value": 5000,
   "recyclesInto": {
     "mechanical_components": 2,
     "simple_gun_parts": 2
   },
-  "imageFilename": "https://cdn.arctracker.io/items/stitcher.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "stitcher.png",
+  "verified": false
 }

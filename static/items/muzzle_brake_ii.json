@@ -47,10 +47,6 @@
     "mechanical_components": 1,
     "wires": 1
   },
-  "recipe": {
-    "mechanical_components": 2,
-    "wires": 4
-  },
   "craftBench": "weapon_bench",
   "weightKg": 0.5,
   "effects": {
@@ -104,6 +100,11 @@
     "Burletta",
     "Stitcher"
   ],
-  "imageFilename": "https://cdn.arctracker.io/items/muzzle_brake_ii.png",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "muzzle_brake_ii.png",
+  "recipe": {
+    "mechanical_components": 2,
+    "wires": 4
+  },
+  "verified": false
 }

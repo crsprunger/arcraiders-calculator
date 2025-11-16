@@ -110,11 +110,12 @@
       "value": "1.5s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/herbal_bandage.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "med_station",
+  "imageFilename": "herbal_bandage.png",
   "recipe": {
     "durable_cloth": 1,
     "great_mullein": 1
   },
-  "craftBench": "med_station"
+  "verified": false
 }

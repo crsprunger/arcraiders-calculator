@@ -45,7 +45,6 @@
     "Equalizer",
     "Jupiter"
   ],
-  "imageFilename": "https://cdn.arctracker.io/items/energy_clip.png",
   "crafting": {
     "metal_parts": 4,
     "chemicals": 2
@@ -55,9 +54,11 @@
   "stackSize": 5,
   "rarity": "Rare",
   "updatedAt": "11/11/2025",
+  "craftBench": "workbench",
+  "imageFilename": "energy_clip.png",
   "recipe": {
     "advanced_arc_powercell": 1,
     "battery": 2
   },
-  "craftBench": "workbench"
+  "verified": false
 }

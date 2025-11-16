@@ -52,7 +52,8 @@
   "salvagesInto": {
     "processor": 2
   },
-  "imageFilename": "https://cdn.arctracker.io/items/exodus_modules.png",
   "value": 2750,
-  "updatedAt": "11/05/2025"
+  "updatedAt": "11/05/2025",
+  "imageFilename": "exodus_modules.png",
+  "verified": false
 }

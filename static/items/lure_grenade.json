@@ -43,11 +43,12 @@
   "type": "Quick Use",
   "rarity": "Uncommon",
   "value": 1000,
-  "imageFilename": "https://cdn.arctracker.io/items/lure_grenade.png",
   "updatedAt": "10/30/2025",
+  "craftBench": "utility_bench",
+  "imageFilename": "lure_grenade.png",
   "recipe": {
     "speaker_component": 1,
     "electrical_components": 1
   },
-  "craftBench": "utility_bench"
+  "verified": false
 }

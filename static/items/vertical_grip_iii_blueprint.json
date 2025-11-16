@@ -43,7 +43,8 @@
   "type": "Blueprint",
   "value": 5000,
   "weightKg": 0,
-  "imageFilename": "https://cdn.arctracker.io/items/vertical_grip_iii_blueprint.png",
   "rarity": "Legendary",
-  "updatedAt": "11/12/2025"
+  "updatedAt": "11/12/2025",
+  "imageFilename": "vertical_grip_iii_blueprint.png",
+  "verified": false
 }

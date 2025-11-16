@@ -41,7 +41,6 @@
     "sr": "Laki meci koji se uglavnom koriste sa automatskim pištoljima i lakim pištoljima. Kompatibilno sa: Burletta, Stitcher, Kettle, Hairpin, Bobcat"
   },
   "type": "Ammunition",
-  "imageFilename": "https://cdn.arctracker.io/items/light_ammo.png",
   "compatibleWith": [
     "Kettle",
     "Burletta",
@@ -53,9 +52,11 @@
   "weightKg": 0.00323,
   "stackSize": 100,
   "updatedAt": "11/03/2025",
+  "craftBench": "workbench",
+  "imageFilename": "light_ammo.png",
   "recipe": {
     "metal_parts": 3,
     "chemicals": 2
   },
-  "craftBench": "workbench"
+  "verified": false
 }

@@ -214,10 +214,6 @@
   },
   "weight": 3.0,
   "value": 5000,
-  "recipe": {
-    "advanced_electrical_components": 2,
-    "processor": 3
-  },
   "craftBench": "equipment_bench",
   "stationLevelRequired": 3,
   "blueprintLocked": true,
@@ -230,6 +226,11 @@
     "advanced_electrical_components": 1,
     "processor": 1
   },
-  "imageFilename": "https://cdn.arctracker.io/items/combat_mk3_flanking.png",
-  "updatedAt": "11/13/2025"
+  "updatedAt": "11/13/2025",
+  "imageFilename": "combat_mk3_flanking.png",
+  "recipe": {
+    "advanced_electrical_components": 2,
+    "processor": 3
+  },
+  "verified": false
 }

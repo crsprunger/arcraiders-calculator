@@ -45,6 +45,7 @@
   "foundIn": "Exodus",
   "weightKg": 3.0,
   "stackSize": 3,
-  "imageFilename": "https://cdn.arctracker.io/items/broken_guidance_system.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "broken_guidance_system.png",
+  "verified": false
 }

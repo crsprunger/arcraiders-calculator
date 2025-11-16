@@ -44,5 +44,6 @@
   "rarity": "Rare",
   "value": 100,
   "recyclesInto": {},
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "verified": false
 }

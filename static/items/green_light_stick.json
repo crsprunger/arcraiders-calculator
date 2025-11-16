@@ -89,10 +89,11 @@
       "value": "40s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/green_light_stick.png",
   "updatedAt": "10/30/2025",
   "_recipe": {
     "chemicals": 3
   },
-  "craftBench": "utility_bench"
+  "craftBench": "utility_bench",
+  "imageFilename": "green_light_stick.png",
+  "verified": false
 }

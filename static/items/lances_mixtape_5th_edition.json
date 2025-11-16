@@ -47,5 +47,6 @@
   "weightKg": 0.2,
   "stackSize": 3,
   "foundIn": "Residential, Commercial",
-  "imageFilename": "https://cdn.arctracker.io/items/lances_mixtape_5th_edition.png"
+  "imageFilename": "lances_mixtape_5th_edition.png",
+  "verified": false
 }

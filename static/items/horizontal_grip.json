@@ -109,10 +109,6 @@
   },
   "value": 7000,
   "weightKg": 0.5,
-  "recipe": {
-    "mod_components": 2,
-    "duct_tape": 5
-  },
   "craftBench": "weapon_bench",
   "stationLevelRequired": 3,
   "recyclesInto": {
@@ -136,6 +132,11 @@
     "Vulcano"
   ],
   "blueprintLocked": true,
-  "imageFilename": "https://cdn.arctracker.io/items/horizontal_grip.png",
-  "updatedAt": "11/12/2025"
+  "updatedAt": "11/12/2025",
+  "imageFilename": "horizontal_grip.png",
+  "recipe": {
+    "mod_components": 2,
+    "duct_tape": 5
+  },
+  "verified": false
 }

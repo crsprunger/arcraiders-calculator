@@ -46,10 +46,11 @@
   "weightKg": 3.0,
   "stackSize": 3,
   "foundIn": "Exodus",
-  "imageFilename": "https://cdn.arctracker.io/items/rocket_thruster.png",
   "updatedAt": "11/01/2025",
   "recyclesInto": {
     "synthesized_fuel": 2,
     "metal_parts": 6
-  }
+  },
+  "imageFilename": "rocket_thruster.png",
+  "verified": false
 }

@@ -134,11 +134,12 @@
       "value": ""
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/heavy_shield.png",
   "updatedAt": "11/03/2025",
+  "craftBench": "equipment_bench",
+  "imageFilename": "heavy_shield.png",
   "recipe": {
     "power_rod": 1,
     "voltage_converter": 2
   },
-  "craftBench": "equipment_bench"
+  "verified": false
 }

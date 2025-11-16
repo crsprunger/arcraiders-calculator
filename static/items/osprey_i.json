@@ -173,12 +173,13 @@
       "value": "Scoped"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/osprey.png",
+  "craftBench": "weapon_bench",
+  "stationLevelRequired": 2,
+  "imageFilename": "osprey.png",
   "recipe": {
     "advanced_mechanical_components": 2,
     "medium_gun_parts": 3,
     "wires": 7
   },
-  "craftBench": "weapon_bench",
-  "stationLevelRequired": 2
+  "verified": false
 }

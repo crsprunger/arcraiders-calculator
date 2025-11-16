@@ -53,6 +53,7 @@
   "weightKg": 0.3,
   "stackSize": 5,
   "foundIn": "Security, Technological",
-  "imageFilename": "https://cdn.arctracker.io/items/sensors.png",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "sensors.png",
+  "verified": false
 }

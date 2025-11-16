@@ -50,6 +50,7 @@
   "weightKg": 0.3,
   "stackSize": 5,
   "foundIn": "Commercial",
-  "imageFilename": "https://cdn.arctracker.io/items/speaker_component.png",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "speaker_component.png",
+  "verified": false
 }

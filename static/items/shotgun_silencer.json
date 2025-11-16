@@ -67,6 +67,7 @@
       "value": "50%"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/shotgun_silencer.png",
-  "updatedAt": "11/02/2025"
+  "updatedAt": "11/02/2025",
+  "imageFilename": "shotgun_silencer.png",
+  "verified": false
 }

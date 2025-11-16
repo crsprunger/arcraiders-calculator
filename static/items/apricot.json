@@ -91,6 +91,7 @@
       "value": "1s"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/apricot.png",
-  "updatedAt": "10/31/2025"
+  "updatedAt": "10/31/2025",
+  "imageFilename": "apricot.png",
+  "verified": false
 }

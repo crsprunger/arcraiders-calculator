@@ -128,10 +128,8 @@ class RecipeCalculator:
 
         # Try to get image from item data first
         imageFilename = item.get('imageFilename', '')
-        if imageFilename.startswith('http'):
-            # Extract filename from CDN URL or use as-is
-            filename = imageFilename.split('/')[-1]
-            image_path = f'static/images/{filename}'
+        if len(imageFilename):
+            image_path = f'static/images/{imageFilename}'
         else:
             # For weapon upgrades (level II and above), use base weapon image
             if weapon_info['is_weapon_upgrade']:
@@ -198,10 +196,8 @@ def get_items():
 
         # Try to get image from item data first
         imageFilename = item_data.get('imageFilename', '')
-        if imageFilename.startswith('http'):
-            # Extract filename from CDN URL or use as-is
-            filename = imageFilename.split('/')[-1]
-            image_path = f'static/images/{filename}'
+        if len(imageFilename):
+            image_path = f'static/images/{imageFilename}'
         else:
             # For weapon upgrades (level II and above), use base weapon image
             if weapon_info['is_weapon_upgrade']:

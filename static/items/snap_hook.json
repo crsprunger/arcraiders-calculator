@@ -43,7 +43,6 @@
   "type": "Quick Use",
   "rarity": "Legendary",
   "value": 14000,
-  "imageFilename": "https://cdn.arctracker.io/items/snap_hook.png",
   "weightKg": 5.0,
   "effects": {
     "Durability": {
@@ -89,14 +88,16 @@
       "value": "20m"
     }
   },
-  "recipe": {
-    "power_rod": 1,
-    "exodus_modules": 1
-  },
   "recyclesInto": {
     "power_rod": 1,
     "rope": 3
   },
   "craftBench": "utility_bench",
-  "updatedAt": "11/05/2025"
+  "updatedAt": "11/05/2025",
+  "imageFilename": "snap_hook.png",
+  "recipe": {
+    "power_rod": 1,
+    "exodus_modules": 1
+  },
+  "verified": false
 }

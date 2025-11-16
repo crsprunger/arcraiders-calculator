@@ -48,5 +48,6 @@
   "weightKg": 0.3,
   "stackSize": 3,
   "foundIn": "Residential, Old World, Commercial",
-  "imageFilename": "https://cdn.arctracker.io/items/red_coral_jewelry.png"
+  "imageFilename": "red_coral_jewelry.png",
+  "verified": false
 }

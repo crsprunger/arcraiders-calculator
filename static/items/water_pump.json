@@ -53,6 +53,7 @@
     "oil": 2
   },
   "foundIn": "Mechanical, Industrial",
-  "imageFilename": "https://cdn.arctracker.io/items/water_pump.png",
-  "updatedAt": "11/03/2025"
+  "updatedAt": "11/03/2025",
+  "imageFilename": "water_pump.png",
+  "verified": false
 }

@@ -68,6 +68,7 @@
       "value": "Stella Montis"
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/stella_montis_medical_storage_key.png",
-  "updatedAt": "11/13/2025"
+  "updatedAt": "11/13/2025",
+  "imageFilename": "stella_montis_medical_storage_key.png",
+  "verified": false
 }

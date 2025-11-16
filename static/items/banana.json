@@ -41,7 +41,8 @@
     "sr": "Novi kozmetički predmet biće dodat u vašu kolekciju."
   },
   "type": "Backpack Charm",
-  "imageFilename": "https://cdn.arctracker.io/items/banana.png",
   "rarity": "Common",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "banana.png",
+  "verified": false
 }

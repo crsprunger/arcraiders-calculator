@@ -93,5 +93,6 @@
     "processor": 1
   },
   "updatedAt": "11/01/2025",
-  "imageFilename": "https://cdn.arctracker.io/items/anvil_splitter.png"
+  "imageFilename": "anvil_splitter.png",
+  "verified": false
 }

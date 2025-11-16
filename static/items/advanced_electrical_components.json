@@ -47,7 +47,6 @@
     "electrical_components": 1,
     "wires": 1
   },
-  "imageFilename": "https://cdn.arctracker.io/items/advanced_electrical_components.png",
   "salvagesInto": {
     "electrical_components": 1
   },
@@ -55,9 +54,11 @@
   "weightKg": 1.0,
   "stackSize": 5,
   "updatedAt": "11/03/2025",
+  "craftBench": "refiner",
+  "imageFilename": "advanced_electrical_components.png",
   "recipe": {
     "wires": 3,
     "electrical_components": 2
   },
-  "craftBench": "refiner"
+  "verified": false
 }

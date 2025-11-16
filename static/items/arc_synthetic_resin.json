@@ -52,6 +52,7 @@
     "it": "Può essere riciclato in materiali da creazione."
   },
   "foundIn": "ARC",
-  "imageFilename": "https://cdn.arctracker.io/items/arc_synthetic_resin.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "arc_synthetic_resin.png",
+  "verified": false
 }

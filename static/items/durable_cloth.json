@@ -45,14 +45,15 @@
   "foundIn": "Medical, Commercial",
   "stackSize": 10,
   "weightKg": 0.25,
-  "imageFilename": "https://cdn.arctracker.io/items/durable_cloth.png",
   "updatedAt": "11/03/2025",
   "value": 640,
   "recyclesInto": {
     "fabric": 6
   },
+  "craftBench": "refiner",
+  "imageFilename": "durable_cloth.png",
   "recipe": {
     "fabric": 14
   },
-  "craftBench": "refiner"
+  "verified": false
 }

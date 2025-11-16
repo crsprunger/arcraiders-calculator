@@ -70,6 +70,7 @@
       "value": 10
     }
   },
-  "imageFilename": "https://cdn.arctracker.io/items/volcanic_rock.png",
-  "updatedAt": "10/30/2025"
+  "updatedAt": "10/30/2025",
+  "imageFilename": "volcanic_rock.png",
+  "verified": false
 }

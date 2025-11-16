@@ -50,9 +50,10 @@
   "salvageInto": {
     "electrical_components": 1
   },
-  "imageFilename": "https://cdn.arctracker.io/items/snitch_scanner.png",
   "updatedAt": "11/13/2025",
   "weightKg": 0.75,
   "stackSize": 3,
-  "foundIn": "ARC"
+  "foundIn": "ARC",
+  "imageFilename": "snitch_scanner.png",
+  "verified": false
 }

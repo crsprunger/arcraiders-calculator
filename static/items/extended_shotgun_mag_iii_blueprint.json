@@ -45,6 +45,7 @@
   "weightKg": 0.0,
   "stackSize": 1,
   "rarity": "Legendary",
-  "imageFilename": "https://cdn.arctracker.io/items/extended_shotgun_mag_iii.png",
-  "updatedAt": "11/12/2025"
+  "updatedAt": "11/12/2025",
+  "imageFilename": "extended_shotgun_mag_iii.png",
+  "verified": false
 }
