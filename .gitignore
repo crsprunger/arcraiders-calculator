@@ -3,4 +3,5 @@
 .vscode/*
 .venv/
 .venv/*
-.add_verified_field.py
+preprocessing/
+preprocessing/*

@@ -3,18 +3,17 @@ Arc Raiders Recipe Calculator
 Analyzes item recipes and breaks them down into base resources.
 """
 
-import os
 import json
 from pathlib import Path
 from collections import defaultdict
-from flask import Flask, render_template, request, jsonify, send_from_directory
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
-@app.route('/images/<path:filename>')
-def serve_item_image(filename):
-   """Serve item images from the local directory."""
-   return send_from_directory('static/images', filename)
+# @app.route('/images/<path:filename>')
+# def serve_item_image(filename):
+#    """Serve item images from the local directory."""
+#    return send_from_directory('static/images', filename)
 
 class RecipeCalculator:
     def __init__(self, data_path="static/items"):
