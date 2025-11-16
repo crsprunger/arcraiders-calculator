@@ -13,10 +13,10 @@ app = Flask(__name__)
 # @app.route('/images/<path:filename>')
 # def serve_item_image(filename):
 #    """Serve item images from the local directory."""
-#    return send_from_directory('static/images', filename)
+#    return send_from_directory('/static/images', filename)
 
 class RecipeCalculator:
-    def __init__(self, data_path="static/items"):
+    def __init__(self, data_path="/home/csprunger/arcraiders-calculator/static/items"):
         self.data_path = Path(data_path)
         self.items = {}
         self.load_items()
@@ -128,13 +128,13 @@ class RecipeCalculator:
         # Try to get image from item data first
         imageFilename = item.get('imageFilename', '')
         if len(imageFilename):
-            image_path = f'static/images/{imageFilename}'
+            image_path = f'/static/images/{imageFilename}'
         else:
             # For weapon upgrades (level II and above), use base weapon image
             if weapon_info['is_weapon_upgrade']:
-                image_path = f'static/images/{weapon_info["base_name"]}.png'
+                image_path = f'/static/images/{weapon_info["base_name"]}.png'
             else:
-                image_path = f'static/images/{item_id}.png'
+                image_path = f'/static/images/{item_id}.png'
 
         # Handle both string and dict formats for name
         name_data = item.get('name', item_id)
@@ -196,13 +196,13 @@ def get_items():
         # Try to get image from item data first
         imageFilename = item_data.get('imageFilename', '')
         if len(imageFilename):
-            image_path = f'static/images/{imageFilename}'
+            image_path = f'/static/images/{imageFilename}'
         else:
             # For weapon upgrades (level II and above), use base weapon image
             if weapon_info['is_weapon_upgrade']:
-                image_path = f'static/images/{weapon_info["base_name"]}.png'
+                image_path = f'/static/images/{weapon_info["base_name"]}.png'
             else:
-                image_path = f'static/images/{item_id}.png'
+                image_path = f'/static/images/{item_id}.png'
 
         items_list.append({
             'id': item_id,
