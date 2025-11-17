@@ -1,7 +1,7 @@
 *.DS_Store
 .vscode/
-.vscode/*
 .venv/
-.venv/*
-preprocessing/
-preprocessing/*
+move_unused_items.py
+list_base_items.py
+static/unused_items/
+static/unused_images/

@@ -1,9 +1,0 @@
-{
-  "id": "cheer",
-  "name": "Cheer",
-  "description": "A new cosmetic will be added to your collection.",
-  "type": "Emote",
-  "rarity": "Common",
-  "imageFilename": "cheer.png",
-  "verified": false
-}

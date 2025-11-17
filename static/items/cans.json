@@ -1,9 +1,0 @@
-{
-  "id": "cans",
-  "name": "Cans",
-  "description": "A new cosmetic will be added to your collection.",
-  "type": "Backpack Attachment",
-  "rarity": "Common",
-  "imageFilename": "cans.png",
-  "verified": false
-}
