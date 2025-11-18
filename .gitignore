@@ -6,3 +6,4 @@ list_base_items.py
 static/unused_items/
 static/unused_images/
 list_items_without_images.py
+__pycache__/
