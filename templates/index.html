@@ -561,8 +561,181 @@
             color: #64ffda;
         }
 
+        /* Tab Navigation Styles */
+        .tab-navigation {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .tab-button {
+            padding: 12px 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(100, 255, 218, 0.3);
+            border-radius: 8px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .tab-button:hover {
+            background: rgba(100, 255, 218, 0.1);
+            border-color: rgba(100, 255, 218, 0.5);
+        }
+
+        .tab-button.active {
+            background: rgba(100, 255, 218, 0.2);
+            border-color: #64ffda;
+            color: #64ffda;
+            box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+        }
+
+        /* Tab Content Styles */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Compare Tab Styles */
+        .compare-sync-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .compare-panels {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .compare-panel {
+            min-width: 0; /* Prevents grid overflow */
+        }
+
+        .compare-item-display {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            border: 2px solid rgba(100, 255, 218, 0.2);
+        }
+
+        .compare-item-display img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 6px;
+            padding: 3px;
+            margin-right: 15px;
+        }
+
+        .compare-item-display img.rarity-common { 
+            background: linear-gradient(to top right, rgba(136, 136, 136, 0.3) 0%, rgba(136, 136, 136, 0) 100%);
+        }
+        .compare-item-display img.rarity-uncommon { 
+            background: linear-gradient(to top right, rgba(46, 204, 113, 0.3) 0%, rgba(46, 204, 113, 0) 100%);
+        }
+        .compare-item-display img.rarity-rare { 
+            background: linear-gradient(to top right, rgba(52, 152, 219, 0.3) 0%, rgba(52, 152, 219, 0) 100%);
+        }
+        .compare-item-display img.rarity-epic { 
+            background: linear-gradient(to top right, rgba(255, 90, 200, 0.3) 0%, rgba(255, 90, 200, 0) 100%);
+        }
+        .compare-item-display img.rarity-legendary { 
+            background: linear-gradient(to top right, rgba(243, 156, 18, 0.3) 0%, rgba(243, 156, 18, 0) 100%);
+        }
+
+        .compare-item-display .item-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #64ffda;
+            text-align: center;
+        }
+
+        .compare-search-container {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .compare-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: 5px;
+            background: rgba(30, 30, 46, 0.98);
+            border: 1px solid rgba(100, 255, 218, 0.3);
+            border-radius: 8px;
+            padding: 10px;
+            display: none;
+            z-index: 1000;
+            max-height: 300px;
+            overflow-y: auto;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        .compare-dropdown.active {
+            display: block;
+        }
+
+        .compare-dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 5px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .compare-dropdown-item:hover {
+            background: rgba(100, 255, 218, 0.1);
+            border-color: rgba(100, 255, 218, 0.3);
+            transform: translateX(5px);
+        }
+
+        .compare-dropdown-item img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-right: 12px;
+            border-radius: 4px;
+            padding: 2px;
+        }
+
+        .compare-dropdown-item img.rarity-common { 
+            background: linear-gradient(to top right, rgba(136, 136, 136, 0.3) 0%, rgba(136, 136, 136, 0) 100%);
+        }
+        .compare-dropdown-item img.rarity-uncommon { 
+            background: linear-gradient(to top right, rgba(46, 204, 113, 0.3) 0%, rgba(46, 204, 113, 0) 100%);
+        }
+        .compare-dropdown-item img.rarity-rare { 
+            background: linear-gradient(to top right, rgba(52, 152, 219, 0.3) 0%, rgba(52, 152, 219, 0) 100%);
+        }
+        .compare-dropdown-item img.rarity-epic { 
+            background: linear-gradient(to top right, rgba(255, 90, 200, 0.3) 0%, rgba(255, 90, 200, 0) 100%);
+        }
+        .compare-dropdown-item img.rarity-legendary { 
+            background: linear-gradient(to top right, rgba(243, 156, 18, 0.3) 0%, rgba(243, 156, 18, 0) 100%);
+        }
+
         @media (max-width: 1024px) {
             .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .compare-panels {
                 grid-template-columns: 1fr;
             }
         }
@@ -571,9 +744,16 @@
 <body>
     <div class="container">
         <h1>Arc Raiders Recipe Calculator</h1>
-        <!-- <p class="subtitle">Select items to see the base resources needed to craft them</p> -->
+        
+        <!-- Tab Navigation -->
+        <div class="tab-navigation">
+            <button class="tab-button active" onclick="switchTab('calculator')">Calculator</button>
+            <button class="tab-button" onclick="switchTab('compare')">Compare</button>
+        </div>
 
-        <div class="main-content">
+        <!-- Calculator Tab -->
+        <div id="calculatorTab" class="tab-content active">
+            <div class="main-content">
             <!-- Item Selection Panel -->
             <div class="panel">
                 <h2>Available Items</h2>
@@ -626,6 +806,96 @@
                 </div>
                 <div id="results" class="results"></div>
             </div>
+        </div>
+        </div>
+
+        <!-- Compare Tab -->
+        <div id="compareTab" class="tab-content">
+            <!-- Synchronize Checkbox -->
+            <div class="compare-sync-container">
+                <label class="auto-break-checkbox">
+                    <input type="checkbox" id="syncCheckbox" onchange="toggleSync()">
+                    <span>Synchronize item breakdowns</span>
+                </label>
+            </div>
+            
+            <!-- Two Side-by-Side Panels -->
+            <div class="compare-panels">
+                <!-- Left Panel -->
+                <div class="compare-panel">
+                    <div class="panel">
+                        <h2></h2>
+                        
+                        <!-- Selected Item Display -->
+                        <div class="compare-item-display" id="leftItemDisplay">
+                            <div class="empty-state">No item selected</div>
+                        </div>
+                        
+                        <!-- Search with Dropdown -->
+                        <div class="compare-search-container">
+                            <input type="text" class="search-box" id="leftSearchBox" 
+                                   placeholder="Search items..." 
+                                   onfocus="showDropdown('left')"
+                                   oninput="filterCompareItems('left')">
+                            <div class="compare-dropdown" id="leftDropdown"></div>
+                        </div>
+                        
+                        <!-- Auto Break Checkbox and Undo/Redo -->
+                        <div style="display: flex; gap: 10px; align-items: center; margin: 15px 0; justify-content: space-between;">
+                            <label class="auto-break-checkbox">
+                                <input type="checkbox" id="leftAutoBreakCheckbox" onchange="toggleCompareAutoBreak('left')">
+                                <span>Automatically break down all</span>
+                            </label>
+                            <div style="display: flex; gap: 8px;">
+                                <button class="clear-all-btn" id="leftUndoBtn" style="display: none;" onclick="undoCompareExpansion('left')">↶ Undo</button>
+                                <button class="clear-all-btn" id="leftRedoBtn" style="display: none;" onclick="redoCompareExpansion('left')">↷ Redo</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Resources Display -->
+                        <h3 style="color: #64ffda; margin-bottom: 10px;">Required Resources</h3>
+                        <div id="leftResults" class="results"></div>
+                    </div>
+                </div>
+                
+                <!-- Right Panel -->
+                <div class="compare-panel">
+                    <div class="panel">
+                        <h2></h2>
+                        
+                        <!-- Selected Item Display -->
+                        <div class="compare-item-display" id="rightItemDisplay">
+                            <div class="empty-state">No item selected</div>
+                        </div>
+                        
+                        <!-- Search with Dropdown -->
+                        <div class="compare-search-container">
+                            <input type="text" class="search-box" id="rightSearchBox" 
+                                   placeholder="Search items..." 
+                                   onfocus="showDropdown('right')"
+                                   oninput="filterCompareItems('right')">
+                            <div class="compare-dropdown" id="rightDropdown"></div>
+                        </div>
+                        
+                        <!-- Auto Break Checkbox and Undo/Redo -->
+                        <div style="display: flex; gap: 10px; align-items: center; margin: 15px 0; justify-content: space-between;">
+                            <label class="auto-break-checkbox">
+                                <input type="checkbox" id="rightAutoBreakCheckbox" onchange="toggleCompareAutoBreak('right')">
+                                <span>Automatically break down all</span>
+                            </label>
+                            <div style="display: flex; gap: 8px;">
+                                <button class="clear-all-btn" id="rightUndoBtn" style="display: none;" onclick="undoCompareExpansion('right')">↶ Undo</button>
+                                <button class="clear-all-btn" id="rightRedoBtn" style="display: none;" onclick="redoCompareExpansion('right')">↷ Redo</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Resources Display -->
+                        <h3 style="color: #64ffda; margin-bottom: 10px;">Required Resources</h3>
+                        <div id="rightResults" class="results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -1195,6 +1465,412 @@
         // Attach undo and redo button event handlers
         document.getElementById('undoBtn').addEventListener('click', undoExpansion);
         document.getElementById('redoBtn').addEventListener('click', redoExpansion);
+
+        // ===== COMPARE TAB FUNCTIONALITY =====
+        
+        // Compare tab state
+        let compareState = {
+            left: {
+                selectedItem: null,
+                resources: {},
+                history: [],
+                redoHistory: []
+            },
+            right: {
+                selectedItem: null,
+                resources: {},
+                history: [],
+                redoHistory: []
+            },
+            synchronized: false
+        };
+
+        // Tab switching
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected tab
+            if (tabName === 'calculator') {
+                document.getElementById('calculatorTab').classList.add('active');
+                document.querySelector('.tab-button:nth-child(1)').classList.add('active');
+            } else if (tabName === 'compare') {
+                document.getElementById('compareTab').classList.add('active');
+                document.querySelector('.tab-button:nth-child(2)').classList.add('active');
+            }
+        }
+
+        // Show dropdown for compare search
+        function showDropdown(side) {
+            const dropdown = document.getElementById(`${side}Dropdown`);
+            dropdown.classList.add('active');
+            
+            // Populate dropdown with all items
+            filterCompareItems(side);
+        }
+
+        // Filter items in compare dropdown
+        function filterCompareItems(side) {
+            const searchBox = document.getElementById(`${side}SearchBox`);
+            const dropdown = document.getElementById(`${side}Dropdown`);
+            const searchTerm = searchBox.value.toLowerCase();
+
+            const filtered = allItems.filter(item => 
+                item.name.toLowerCase().includes(searchTerm) ||
+                item.type.toLowerCase().includes(searchTerm)
+            ).sort((a, b) => a.name.localeCompare(b.name));
+
+            if (filtered.length === 0) {
+                dropdown.innerHTML = '<div class="empty-state" style="padding: 20px;">No items found</div>';
+            } else {
+                dropdown.innerHTML = filtered.map(item => `
+                    <div class="compare-dropdown-item" onclick="selectCompareItem('${side}', '${item.id}')">
+                        <img src="${item.image}" 
+                             alt="${item.name}" 
+                             class="rarity-${item.rarity.toLowerCase()}" 
+                             onerror="this.src='/static/images/notfound.png'">
+                        <span class="item-name">${item.name}</span>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.compare-search-container') && 
+                !e.target.closest('.filter-dropdown')) {
+                document.querySelectorAll('.compare-dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+
+        // Select item in compare panel
+        async function selectCompareItem(side, itemId) {
+            const item = allItems.find(i => i.id === itemId);
+            if (!item) return;
+
+            // Update selected item
+            compareState[side].selectedItem = item;
+
+            // Update display - horizontal layout like dropdown items
+            const itemDisplay = document.getElementById(`${side}ItemDisplay`);
+            itemDisplay.innerHTML = `
+                <img src="${item.image}" 
+                     alt="${item.name}" 
+                     class="rarity-${item.rarity.toLowerCase()}" 
+                     onerror="this.src='/static/images/notfound.png'">
+                <span class="item-name">${item.name}</span>
+            `;
+
+            // Close dropdown
+            document.getElementById(`${side}Dropdown`).classList.remove('active');
+
+            // Clear search box
+            document.getElementById(`${side}SearchBox`).value = '';
+
+            // Calculate resources for this item
+            await calculateCompareResources(side);
+        }
+
+        // Calculate resources for compare item
+        async function calculateCompareResources(side) {
+            const item = compareState[side].selectedItem;
+            if (!item) return;
+
+            try {
+                const response = await fetch('/api/calculate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ items: { [item.id]: 1 } })
+                });
+
+                const resources = await response.json();
+                displayCompareResults(side, resources, true);
+
+                // If auto-break is enabled, break down all resources
+                const autoBreakCheckbox = document.getElementById(`${side}AutoBreakCheckbox`);
+                if (autoBreakCheckbox && autoBreakCheckbox.checked) {
+                    await autoBreakdownCompareAll(side);
+                }
+            } catch (error) {
+                console.error('Error calculating resources:', error);
+            }
+        }
+
+        // Display compare results
+        function displayCompareResults(side, resources, clearHistory = false) {
+            const resultsContainer = document.getElementById(`${side}Results`);
+
+            if (resources.length === 0) {
+                resultsContainer.innerHTML = '<div class="empty-state">No resources needed</div>';
+                compareState[side].resources = {};
+                updateCompareUndoRedoButtons(side);
+                return;
+            }
+
+            // Convert array to map for current state
+            compareState[side].resources = {};
+            resources.forEach(r => {
+                compareState[side].resources[r.id] = r;
+            });
+
+            // Clear history when starting fresh calculation
+            if (clearHistory) {
+                compareState[side].history = [];
+                compareState[side].redoHistory = [];
+                updateCompareUndoRedoButtons(side);
+            }
+
+            const html = resources.map(resource => {
+                const expandClass = resource.can_expand ? 'expandable' : '';
+                const expandIndicator = resource.can_expand ? '<div class="expand-indicator">▼</div>' : '';
+                
+                // Calculate font size based on name length
+                const nameLength = resource.name.length;
+                let fontSize;
+                if (nameLength <= 10) {
+                    fontSize = '1.1em';
+                } else if (nameLength <= 15) {
+                    fontSize = '0.95em';
+                } else if (nameLength <= 22) {
+                    fontSize = '0.85em';
+                } else if (nameLength <= 30) {
+                    fontSize = '0.75em';
+                } else {
+                    fontSize = '0.65em';
+                }
+
+                return `
+                    <div class="resource-card ${expandClass}"
+                         data-item-id="${resource.id}"
+                         onclick="${resource.can_expand ? `expandCompareItem('${side}', '${resource.id}')` : ''}">
+                        ${expandIndicator}
+                        <img src="${resource.image}" alt="${resource.name}" class="rarity-${resource.rarity.toLowerCase()}" onerror="this.style.opacity='0.3'; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22><circle cx=%2240%22 cy=%2240%22 r=%2230%22 fill=%22none%22 stroke=%22%23888%22 stroke-width=%222%22/><text x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23888%22 font-size=%2224%22>?</text></svg>'">
+                        <div class="resource-name" style="font-size: ${fontSize};">${resource.name}</div>
+                        <div class="resource-quantity">×${resource.quantity}</div>
+                    </div>
+                `;
+            }).join('');
+
+            resultsContainer.innerHTML = html;
+        }
+
+        // Expand item in compare panel
+        async function expandCompareItem(side, itemId) {
+            const resource = compareState[side].resources[itemId];
+            if (!resource || !resource.can_expand) return;
+
+            try {
+                // Save current state to history before making changes
+                const stateCopy = {};
+                for (const [id, res] of Object.entries(compareState[side].resources)) {
+                    stateCopy[id] = JSON.parse(JSON.stringify(res));
+                }
+                compareState[side].history.push(stateCopy);
+                compareState[side].redoHistory = [];
+                updateCompareUndoRedoButtons(side);
+
+                // Fetch the recipe for this item
+                const response = await fetch('/api/expand', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ item_id: itemId, quantity: resource.quantity })
+                });
+
+                const ingredients = await response.json();
+
+                // Remove the clicked item from current resources
+                delete compareState[side].resources[itemId];
+
+                // Add ingredients, accumulating quantities for duplicates
+                for (const ingredient of ingredients) {
+                    if (compareState[side].resources[ingredient.id]) {
+                        compareState[side].resources[ingredient.id].quantity += ingredient.quantity;
+                    } else {
+                        compareState[side].resources[ingredient.id] = ingredient;
+                    }
+                }
+
+                // Convert map back to sorted array and redisplay
+                const resourcesArray = Object.values(compareState[side].resources).sort((a, b) =>
+                    a.name.localeCompare(b.name)
+                );
+
+                displayCompareResults(side, resourcesArray);
+
+                // If synchronized, also expand on the other side
+                if (compareState.synchronized) {
+                    const otherSide = side === 'left' ? 'right' : 'left';
+                    const otherResource = compareState[otherSide].resources[itemId];
+                    if (otherResource && otherResource.can_expand) {
+                        await expandCompareItem(otherSide, itemId);
+                    }
+                }
+
+            } catch (error) {
+                console.error('Error expanding item:', error);
+            }
+        }
+
+        // Update undo/redo buttons for compare panel
+        function updateCompareUndoRedoButtons(side) {
+            const undoBtn = document.getElementById(`${side}UndoBtn`);
+            const redoBtn = document.getElementById(`${side}RedoBtn`);
+            
+            undoBtn.style.display = compareState[side].history.length > 0 ? 'block' : 'none';
+            redoBtn.style.display = compareState[side].redoHistory.length > 0 ? 'block' : 'none';
+        }
+
+        // Undo compare expansion
+        function undoCompareExpansion(side) {
+            if (compareState[side].history.length === 0) return;
+
+            // Save current state to redo history
+            const currentCopy = {};
+            for (const [id, res] of Object.entries(compareState[side].resources)) {
+                currentCopy[id] = JSON.parse(JSON.stringify(res));
+            }
+            compareState[side].redoHistory.push(currentCopy);
+
+            // Restore the previous state
+            compareState[side].resources = compareState[side].history.pop();
+            updateCompareUndoRedoButtons(side);
+
+            // Convert map back to sorted array and redisplay
+            const resourcesArray = Object.values(compareState[side].resources).sort((a, b) =>
+                a.name.localeCompare(b.name)
+            );
+
+            displayCompareResults(side, resourcesArray);
+        }
+
+        // Redo compare expansion
+        function redoCompareExpansion(side) {
+            if (compareState[side].redoHistory.length === 0) return;
+
+            // Save current state to undo history
+            const currentCopy = {};
+            for (const [id, res] of Object.entries(compareState[side].resources)) {
+                currentCopy[id] = JSON.parse(JSON.stringify(res));
+            }
+            compareState[side].history.push(currentCopy);
+
+            // Restore the next state
+            compareState[side].resources = compareState[side].redoHistory.pop();
+            updateCompareUndoRedoButtons(side);
+
+            // Convert map back to sorted array and redisplay
+            const resourcesArray = Object.values(compareState[side].resources).sort((a, b) =>
+                a.name.localeCompare(b.name)
+            );
+
+            displayCompareResults(side, resourcesArray);
+        }
+
+        // Toggle auto-break for compare panel
+        async function toggleCompareAutoBreak(side) {
+            const checkbox = document.getElementById(`${side}AutoBreakCheckbox`);
+            
+            if (checkbox.checked) {
+                await autoBreakdownCompareAll(side);
+            } else {
+                // Recalculate from selected item
+                if (compareState[side].selectedItem) {
+                    await calculateCompareResources(side);
+                }
+            }
+        }
+
+        // Auto breakdown all for compare panel
+        async function autoBreakdownCompareAll(side) {
+            const maxIterations = 100;
+            let iterations = 0;
+            
+            while (iterations < maxIterations) {
+                const expandableItems = Object.values(compareState[side].resources).filter(r => r.can_expand);
+                
+                if (expandableItems.length === 0) {
+                    break;
+                }
+                
+                for (const resource of expandableItems) {
+                    try {
+                        const response = await fetch('/api/expand', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ item_id: resource.id, quantity: resource.quantity })
+                        });
+                        
+                        const ingredients = await response.json();
+                        
+                        delete compareState[side].resources[resource.id];
+                        
+                        for (const ingredient of ingredients) {
+                            if (compareState[side].resources[ingredient.id]) {
+                                compareState[side].resources[ingredient.id].quantity += ingredient.quantity;
+                            } else {
+                                compareState[side].resources[ingredient.id] = ingredient;
+                            }
+                        }
+                    } catch (error) {
+                        console.error('Error expanding item:', error);
+                    }
+                }
+                
+                iterations++;
+            }
+            
+            const resourcesArray = Object.values(compareState[side].resources).sort((a, b) =>
+                a.name.localeCompare(b.name)
+            );
+            
+            displayCompareResults(side, resourcesArray, true);
+        }
+
+        // Toggle synchronization
+        function toggleSync() {
+            const syncCheckbox = document.getElementById('syncCheckbox');
+            compareState.synchronized = syncCheckbox.checked;
+
+            if (compareState.synchronized) {
+                // Sync the auto-break checkboxes
+                const leftCheckbox = document.getElementById('leftAutoBreakCheckbox');
+                const rightCheckbox = document.getElementById('rightAutoBreakCheckbox');
+                
+                // Make them match (use left as source of truth when first syncing)
+                rightCheckbox.checked = leftCheckbox.checked;
+            }
+        }
+
+        // Sync auto-break checkboxes when synchronized
+        document.addEventListener('DOMContentLoaded', () => {
+            const leftAutoBreak = document.getElementById('leftAutoBreakCheckbox');
+            const rightAutoBreak = document.getElementById('rightAutoBreakCheckbox');
+
+            leftAutoBreak.addEventListener('change', () => {
+                if (compareState.synchronized) {
+                    rightAutoBreak.checked = leftAutoBreak.checked;
+                }
+            });
+
+            rightAutoBreak.addEventListener('change', () => {
+                if (compareState.synchronized) {
+                    leftAutoBreak.checked = rightAutoBreak.checked;
+                }
+            });
+        });
 
         // Initialize
         loadItems();

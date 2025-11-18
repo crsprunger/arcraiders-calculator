@@ -1,0 +1,10 @@
+{
+  "id": "no_item_selected",
+  "name": {
+    "en": "No item selected"
+  },
+  "rarity": "Common",
+  "imageFilename": "notfound.png",
+  "recipe": {},
+  "verified": false
+}
