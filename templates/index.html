@@ -570,8 +570,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>🛠️ Arc Raiders Recipe Calculator</h1>
-        <p class="subtitle">Select items to see the base resources needed to craft them</p>
+        <h1>Arc Raiders Recipe Calculator</h1>
+        <!-- <p class="subtitle">Select items to see the base resources needed to craft them</p> -->
 
         <div class="main-content">
             <!-- Item Selection Panel -->
@@ -613,14 +613,15 @@
 
             <!-- Required Resources Panel -->
             <div class="panel" id="resultsPanel">
-                <div class="panel-header">
-                    <h2>Required Resources</h2>
-                    <div style="display: flex; gap: 10px; align-items: center;">
-                        <label class="auto-break-checkbox">
-                            <input type="checkbox" id="autoBreakCheckbox" onchange="toggleAutoBreak()">
-                            <span>Automatically break down all</span>
-                        </label>
+                <h2>Required Resources</h2>
+                <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 15px; justify-content: space-between;">
+                    <label class="auto-break-checkbox">
+                        <input type="checkbox" id="autoBreakCheckbox" onchange="toggleAutoBreak()">
+                        <span>Automatically break down all</span>
+                    </label>
+                    <div style="display: flex; gap: 8px;">
                         <button class="clear-all-btn" id="undoBtn" style="display: none;">↶ Undo</button>
+                        <button class="clear-all-btn" id="redoBtn" style="display: none;">↷ Redo</button>
                     </div>
                 </div>
                 <div id="results" class="results"></div>
@@ -906,12 +907,13 @@
             applyFilters();
         });
 
-        // Add item to selection
+        // Add item to selection (or remove if already selected)
         function addItem(itemId) {
             if (selectedItems[itemId]) {
-                // Item already selected - do nothing
-                return;
+                // Item already selected - remove it
+                delete selectedItems[itemId];
             } else {
+                // Add new item with quantity 1
                 selectedItems[itemId] = 1;
             }
             applyFilters(); // Refresh display to show quantity controls
@@ -949,15 +951,16 @@
         let currentResources = {};
         // Track history for undo functionality
         let resourceHistory = [];
+        // Track redo history
+        let redoHistory = [];
 
-        // Update undo button visibility
-        function updateUndoButton() {
+        // Update undo/redo button visibility
+        function updateUndoRedoButtons() {
             const undoBtn = document.getElementById('undoBtn');
-            if (resourceHistory.length > 0) {
-                undoBtn.style.display = 'block';
-            } else {
-                undoBtn.style.display = 'none';
-            }
+            const redoBtn = document.getElementById('redoBtn');
+            
+            undoBtn.style.display = resourceHistory.length > 0 ? 'block' : 'none';
+            redoBtn.style.display = redoHistory.length > 0 ? 'block' : 'none';
         }
 
         // Display results
@@ -966,9 +969,9 @@
             const resultsContainer = document.getElementById('results');
 
             if (resources.length === 0) {
-                resultsContainer.innerHTML = '<div class="empty-state">No items selected. Select items from the left to see required resources.</div>';
+                resultsContainer.innerHTML = '<div class="empty-state"></div>';
                 currentResources = {};
-                updateUndoButton();
+                updateUndoRedoButtons();
                 return;
             }
 
@@ -981,7 +984,8 @@
             // Clear history when starting fresh calculation
             if (clearHistory) {
                 resourceHistory = [];
-                updateUndoButton();
+                redoHistory = [];
+                updateUndoRedoButtons();
             }
 
             const html = resources.map(resource => {
@@ -1033,7 +1037,8 @@
                     stateCopy[id] = JSON.parse(JSON.stringify(res)); // Deep copy
                 }
                 resourceHistory.push(stateCopy);
-                updateUndoButton();
+                redoHistory = []; // Clear redo history on new action
+                updateUndoRedoButtons();
 
                 // Fetch the recipe for this item
                 const response = await fetch('/api/expand', {
@@ -1076,9 +1081,39 @@
         function undoExpansion() {
             if (resourceHistory.length === 0) return;
 
+            // Save current state to redo history
+            const currentCopy = {};
+            for (const [id, res] of Object.entries(currentResources)) {
+                currentCopy[id] = JSON.parse(JSON.stringify(res));
+            }
+            redoHistory.push(currentCopy);
+
             // Restore the previous state
             currentResources = resourceHistory.pop();
-            updateUndoButton();
+            updateUndoRedoButtons();
+
+            // Convert map back to sorted array and redisplay
+            const resourcesArray = Object.values(currentResources).sort((a, b) =>
+                a.name.localeCompare(b.name)
+            );
+
+            displayResults(resourcesArray);
+        }
+
+        // Redo the last undone expansion
+        function redoExpansion() {
+            if (redoHistory.length === 0) return;
+
+            // Save current state to undo history
+            const currentCopy = {};
+            for (const [id, res] of Object.entries(currentResources)) {
+                currentCopy[id] = JSON.parse(JSON.stringify(res));
+            }
+            resourceHistory.push(currentCopy);
+
+            // Restore the next state
+            currentResources = redoHistory.pop();
+            updateUndoRedoButtons();
 
             // Convert map back to sorted array and redisplay
             const resourcesArray = Object.values(currentResources).sort((a, b) =>
@@ -1157,8 +1192,9 @@
             displayResults(resourcesArray, true);
         }
 
-        // Attach undo button event handler
+        // Attach undo and redo button event handlers
         document.getElementById('undoBtn').addEventListener('click', undoExpansion);
+        document.getElementById('redoBtn').addEventListener('click', redoExpansion);
 
         // Initialize
         loadItems();

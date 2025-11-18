@@ -49,5 +49,9 @@
   },
   "updatedAt": "10/30/2025",
   "imageFilename": "burletta.png",
+  "upgradeCost": {
+    "mechanical_components": 3,
+    "simple_gun_parts": 1
+  },
   "verified": false
 }
